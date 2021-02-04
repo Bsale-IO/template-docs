@@ -42,7 +42,7 @@ Para mostrar los iconos de las redes sociales se utiliza la fuente [font awesome
 Sólo borrar el contenido dentro de `{% if rs_title == 'whatsapp' %}`
 
 
-```
+```liquid
 {% for rrss in site.social_networks %}
    {% assign social_network = element[1] %}
    {% assign rs_title = rrss.title | downcase %}
