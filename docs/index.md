@@ -1,6 +1,6 @@
 ## test
 
-```django
+{% raw %}
 <div></div>
 {{liquid}}
-```
+{% endraw %}
