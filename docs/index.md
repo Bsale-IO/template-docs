@@ -3,7 +3,7 @@
 
 ```django
 <div></div>
-{% raw %}{{liquid}}
+{{liquid}}
 ```
 ## 2 
 {% raw %}
@@ -11,5 +11,5 @@
 <div></div>
 {{liquid}}
 ```
-{% endraw %}
+
 {% endraw %}
