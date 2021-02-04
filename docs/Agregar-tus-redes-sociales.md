@@ -59,6 +59,3 @@ Sólo borrar el contenido dentro de `{% if rs_title == 'whatsapp' %}`
    {%endif%}
 {% endfor %}
 ```
-### Te podría interesar 
-
-[[compartir en redes sociales]]
