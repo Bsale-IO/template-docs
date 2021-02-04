@@ -1,5 +1,0 @@
-* [[robots.txt]]
-* [[Bsale.js]]
-* [[config.js]]
-* [[script.js]]
-* [[pixel_polyfill.js]]
