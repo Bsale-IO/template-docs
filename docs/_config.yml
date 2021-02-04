@@ -1,1 +1,4 @@
 theme: jekyll-theme-cayman
+name: test
+markdown: kramdown
+url: https://bsale-io.github.io/template-docs/
