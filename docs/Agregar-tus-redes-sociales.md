@@ -49,13 +49,13 @@ Sólo borrar el contenido dentro de `{% if rs_title == 'whatsapp' %}`
    {% if rs_title == 'whatsapp' %}
       <!-- si es whatsapp carga este botón -->
       
-   {%else%}
+   {% else %}
       <!-- si no es whatsapp dibuja la red social --> 
       <a class="btn" title="visitanos en {{rrss.title}}"
          href="{{ rrss.value }}"
          rel="nofollow noopener noreferrer"  target="_blank" >
          <i class="fab fa-{{ rs_title }}" aria-hidden="true"></i>
       </a>
-   {%endif%}
+   {% endif %}
 {% endfor %}
 ```
