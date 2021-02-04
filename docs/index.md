@@ -1,5 +1,6 @@
 ## test
-```html
+
+```django
 <div></div>
 {{liquid}}
 ```
