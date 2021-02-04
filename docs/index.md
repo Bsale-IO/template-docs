@@ -1,37 +1,43 @@
-## Welcome to GitHub Pages
+# Bsale Wiki
 
-You can use the [editor on GitHub](https://github.com/Bsale-IO/template-docs/edit/master/docs/index.md) to maintain and preview the content for your website in Markdown files.
+Bienvenido a la wiki  para **e-commerce Bsale**.
+ 
+[[Liquid | liquid Bsale]]  es un motor de template utilizado por los principales ecommerce a nivel mundial, en Bsale trabajamos con un liquid personalizado que permite imprimir en el template la información de tus productos, colecciones y configuraciones. 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## 1. [[Plantillas]]
 
-### Markdown
+`Tienda en Línea` ⮞ `Diseño` ⮞ `Plantillas`
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Cada template de bsale se construye en base diferentes tipos de plantillas, cada una de estas representa una tipo de página dentro de tu sitio, como por ejemplo: _Colección, Marca, Producto_
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+Para más información [[Plantillas]]
 
-- Bulleted
-- List
+## 2. [[Componentes | Componente]]
 
-1. Numbered
-2. List
+`Tienda en Línea` ⮞ `Diseño` ⮞ `Componentes`
 
-**Bold** and _Italic_ and `Code` text
+Los componentes son estructuras `html` que construyen las diferentes partes de una [[Plantilla|Plantillas]]. Por ejemplo la **Cabecera** o **Pie de Página** que deben ir en la mayoría de las plantillas.
 
-[Link](url) and ![Image](src)
-```
+Para más información ver [[ Componente ]]
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+## 3. [[Variables]]
+Las variables te permiten acceder a la información de tus productos y configuraciones para que sea más fácil construir tu template
 
-### Jekyll Themes
+Para más información ver [[Variables]]
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Bsale-IO/template-docs/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+## 4. [[Archivos]]
 
-### Support or Contact
+`Tienda en Línea` ⮞ `Diseño` ⮞ `Archivos`
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Los archivos son todos los documentos necesarios para darle funcionalidad y estilos a tu template, en este menú se deben alojar todos los archivos `js`, `css` e imagenes<sup>1</sup>  que utilices en la construcción de tu template.
+
+Para más información ver [[ Archivos ]]
+> [1]: _Las imágenes de los productos y logotipos de cargan desde sus propias configuraciones._
+
+## Framework JS
+
+Puedes agregar otro framework js para potenciar tu e-commerce.
+
+Para más información ver [[ trabajar con framework | Utilizar framework JS en Liquid (Mustache, Handlebars, Vue etc...)]]
+
