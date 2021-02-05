@@ -1,9 +1,34 @@
 {% raw %}
-## test 1
+## html
 
 ```html
-<div class="class"> {{texto}} </div>
-{{liquid}}
+<div class="class" id="id" title="some">  {{texto}} </div>
+
+```
+## js
+```js
+var test = {{texto}} 
+function a(t){
+    return t.value
+}
+
+test.addEventListener('click', function(e){
+    //do something
+    let t = e
+})
+```
+
+## css
+```css
+#id{
+    color:red;
+}
+.class{
+    width:10px;
+}
+a{
+    display:none;
+}
 ```
 
 | table | test  | 3 | 
