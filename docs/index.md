@@ -40,8 +40,11 @@ todo
 - [X] mark
 
 
-Separador 
----
+| Aplica para               | Monto de Dinero    | Porcentaje         | Despacho gratis    |
+| ------------------------- | ------------------ | ------------------ | ------------------ |
+| Todas las compras         | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| Productos Seleccionados   | :heavy_check_mark: | :heavy_check_mark: | :x:                |
+| Colecciones Seleccionadas | :heavy_check_mark: | :heavy_check_mark: | :x:                |
 
 
 
