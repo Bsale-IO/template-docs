@@ -8,6 +8,13 @@
 ## js
 ```js
 var test = {{texto}} 
+var str = "string"
+let array = ["hola",2]
+const objet = {
+    json: true,
+    test: "hola",
+    num: 20.300
+}
 function a(t){
     return t.value
 }
