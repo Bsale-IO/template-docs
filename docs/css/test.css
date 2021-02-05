@@ -15,6 +15,6 @@ table thead th {
     vertical-align: bottom;
     border-bottom: 2px solid #dee2e6;;
 }
-.table tbody tr:hover {
+table tbody tr:hover {
     background-color: rgba(0,0,0,.075);
 }
