@@ -1,7 +1,7 @@
 ## test 1
 
-```django
-<div></div>
+```liquid
+<div class="class"> texto </div>
 {{liquid}}
 ```
  
