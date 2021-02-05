@@ -1,3 +1,4 @@
 name: test
 markdown: Kramdown
 url: https://bsale-io.github.io/template-docs/
+render_with_liquid: false
