@@ -1,9 +1,10 @@
 ## test 1
-
-```liquid
+{% raw  liquid %}
+```
 <div class="class"> texto </div>
 {{liquid}}
 ```
+{% endraw %}
  
 
 
