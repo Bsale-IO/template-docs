@@ -1,5 +1,5 @@
-{% for item in menu %}
-<a href="{{item.link}}">
-  {{item.name}}
+{% for item in site.data.samplelist.docs %}
+<a href="{{item.url}}">
+  {{item.title}}
 </a>
 {% endfor %}
