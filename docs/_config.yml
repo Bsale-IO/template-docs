@@ -14,5 +14,9 @@ defaults:
       path: "assets/img"
     values:
       image: true
+# file: _config.yml
+assets:
+  sources:
+    - _assets
 plugins:
 - jekyll-menus
