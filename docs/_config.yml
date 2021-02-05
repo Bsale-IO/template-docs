@@ -1,5 +1,10 @@
 name: test
 markdown: Kramdown
 url: https://bsale-io.github.io/template-docs/
-liquid:
-  render_with_liquid: false
+## Menu
+docs_list_title: ACME Documentation
+docs:
+
+- title: test
+  url: test.md
+
