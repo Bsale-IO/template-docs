@@ -14,15 +14,20 @@ table {
   
 table thead th {
     vertical-align: bottom;
-    border-bottom: 2px solid #dee2e6;;
+    border-bottom: 2px solid ;
 }
 table tbody tr:hover {
     background-color: rgba(0,0,0,.075);
 }
 /*quote*/
 blockquote{
-    border-left:.25rem solid silver;
+    border-left:.25rem solid #dee2e6;
     padding:0 1rem;
+}
 
-
+h1{
+    border-bottom: 2px solid #dee2e6;
+}
+h2{
+    border-bottom: 1px solid #dee2e6; 
 }
