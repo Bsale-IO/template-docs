@@ -31,3 +31,16 @@ h1{
 h2{
     border-bottom: 1px solid #dee2e6; 
 }
+
+
+
+/*list checkbox*/
+
+.task-list{
+    list-style-type: none;
+    padding-left:0
+}
+
+.task-list-item-checkbox{
+    padding-right: .5rem
+}
