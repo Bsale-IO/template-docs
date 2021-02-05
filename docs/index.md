@@ -7,7 +7,17 @@
 ##### h5 title
 ###### h6 title
 
-parrafo 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla diam augue, porta eu purus nec, venenatis dictum risus. Duis hendrerit et felis vel luctus. Pellentesque scelerisque lacus quis mi hendrerit, non eleifend justo commodo. Ut sed dolor euismod enim pulvinar tincidunt. Sed sem libero, viverra vel rutrum sit amet, consequat vel justo. Donec eget arcu turpis. Sed suscipit gravida tincidunt.
+
+Aenean mauris magna, dignissim in dui et, viverra consequat nunc. Suspendisse facilisis gravida augue, non ultricies libero egestas non. Aenean a ultricies libero. Cras ante quam, volutpat ac magna id, accumsan blandit enim. Vestibulum ornare lacus sit amet purus interdum fringilla. Proin ac aliquet lorem, sed maximus justo. Nunc eu ex et augue consectetur placerat eu vitae dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac odio venenatis, luctus lacus at, scelerisque justo. Etiam et quam venenatis, viverra nulla et, auctor leo. Nunc cursus lectus lorem, nec congue nibh lobortis a. Duis tincidunt purus in orci rhoncus congue.
+
+
+**Negrita**
+_Italica_
+`Código`
+
+[link](link)
+
 
 > cita 
 >> doble cita 
@@ -20,8 +30,14 @@ parrafo
 
 1. numeral list
 2. numeral list
+    - sub list
+    - sub list
 3. numeral list
 4. numeral list
+
+todo
+- [ ] single
+- [X] mark
 
 
 Separador 
