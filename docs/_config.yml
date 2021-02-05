@@ -2,7 +2,15 @@ name: test
 markdown: Kramdown
 url: https://bsale-io.github.io/template-docs/
 defaults:
-  - scope:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+
+  - 
+    scope:
       path: "assets/img"
     values:
       image: true
