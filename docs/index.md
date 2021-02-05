@@ -6,10 +6,6 @@
 {{liquid}}
 ```
 ## 2 
-{% raw %}
-```django
-<div></div>
-{{liquid}}
-```
+
 
 {% endraw %}
