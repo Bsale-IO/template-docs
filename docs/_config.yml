@@ -1,6 +1,6 @@
 name: test
 markdown: Kramdown
-baseurl: /template-docs/docs
+baseurl: /template-docs
 url: https://bsale-io.github.io/template-docs/
 defaults:
   -
