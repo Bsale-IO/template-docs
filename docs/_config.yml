@@ -1,23 +1,4 @@
 name: test
 markdown: Kramdown
+url: https://bsale-io.github.io
 baseurl: /template-docs
-url: https://bsale-io.github.io/template-docs/
-defaults:
-  -
-    scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "default"
-
-  - 
-    scope:
-      path: "assets/img"
-    values:
-      image: true
-# file: _config.yml
-assets:
-  sources:
-    - _assets
-plugins:
-- jekyll-menus
