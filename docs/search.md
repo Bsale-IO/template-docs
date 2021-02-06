@@ -8,7 +8,7 @@
           "title": "{{ entry.title | xml_escape }}",
           "author": "{{ entry.author | xml_escape }}",
           "category": "{{ entry.category | xml_escape }}",
-          "content": {{ entry.content | strip_html | strip_newlines | jsonify }},
+          "content": {{ entry.content | strip_html | replace:'"','\"' | strip_newlines | jsonify }},
           "url": "{{ entry.url | xml_escape }}"
         },
       {% endfor %}
@@ -17,7 +17,7 @@
           "title": "{{ entry.title | xml_escape }}",
           "author": "{{ entry.author | xml_escape }}",
           "category": "{{ entry.category | xml_escape }}",
-          "content": {{ entry.content | strip_html | strip_newlines | jsonify }},
+          "content": {{ entry.content | strip_html | replace:'"','\"' | strip_newlines | jsonify }},
           "url": "{{ entry.url | xml_escape }}"
         }
         {% unless forloop.last %},{% endunless %}
