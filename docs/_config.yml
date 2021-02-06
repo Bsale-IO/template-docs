@@ -2,8 +2,6 @@ name: test
 url: https://bsale-io.github.io
 baseurl: /template-docs
 markdown: Kramdown
-layout: default
-
 collections:
   test:
     output: true
