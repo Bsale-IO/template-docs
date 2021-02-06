@@ -43,3 +43,8 @@ h2{
 .task-list-item-checkbox{
     margin-right: .5rem
 }
+
+.menu a{
+    display:block;
+    padding: 1rem .5rem;
+}
