@@ -1,8 +1,14 @@
 <nav class="d-none d-md-block col-md-3 col-lg-2 menu">
       <!--buscador:start-->
       <form action="{{ site.baseurl }}/search" method="get">
-        <input type="text" id="search-box" placeholder="buscar" name="query" class="form-control">
-        <input type="submit" value="search" class="btn btn-primary">
+        <div class="input-group">
+          <input type="text" id="search-box" placeholder="buscar" name="query" class="form-control">
+          <div class="input-group-append">
+            <button class="btn btn-outline-secondary" type="button">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </div>
       </form>
     <!--search:end-->
   {% for item in site.data.menus %}
