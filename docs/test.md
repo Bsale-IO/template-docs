@@ -6,3 +6,10 @@ lorem ipsum
 - [ ] manzanas
 - [ ] papas
 - [x] platanos
+
+tihs cosa
+{% for s in site.pages %}
+    {{s.title}}
+    {{s.name}}
+
+{% endfor %}
