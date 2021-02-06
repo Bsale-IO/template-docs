@@ -11,5 +11,7 @@ tihs cosa
 {% for s in site.pages %}
     {{s.title}}
     {{s.name}}
+    {{s.link}}
+    {{s.url}}
 
 {% endfor %}
