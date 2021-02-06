@@ -46,5 +46,9 @@ h2{
 
 .menu a{
     display:block;
-    padding: 1rem .5rem;
+    padding: .5rem 1rem ;
+}
+.menu a:hover{
+    background:silver;
+    text-decoration: none;
 }
