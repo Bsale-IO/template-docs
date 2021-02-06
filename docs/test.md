@@ -7,6 +7,7 @@ lorem ipsum
 - [ ] papas
 - [x] platanos
 
+for here
 {% for doc in site.test %}
     {{doc.content | xml_escape }}
 {% endfor %}
