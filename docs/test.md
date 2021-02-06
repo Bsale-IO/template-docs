@@ -1,6 +1,7 @@
 ---
 layout: page
 title: value title
+tags: [prueba, testeo]
 ---
 
 ## test page 
@@ -22,6 +23,7 @@ lorem ipsum
     id          :{{s.id}}
     categories  :{{s.categories}}
     path        :{{s.path}}
+    tags        :{{s.tags}}
     <!-- -->
 
 {% endfor %}
