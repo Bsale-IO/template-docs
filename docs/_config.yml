@@ -5,7 +5,7 @@ markdown: Kramdown
 layout: default
 
 collections:
-  _test:
+  test:
     output: true
 
 plugins:
