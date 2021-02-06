@@ -1,4 +1,8 @@
 
+---
+title: value title
+---
+
 ## test page 
 
 lorem ipsum
@@ -7,12 +11,17 @@ lorem ipsum
 - [ ] papas
 - [x] platanos
 
-tihs cosa
+### loop
 {% for s in site.pages %}
-    {{s.title}}
-    {{s.name}}
-    {{s.link}}
-    -
-    {{s.url | replace: ".md",""}}
+
+    <!-- -->
+    title       :{{s.title}}
+    name        :{{s.name}}
+    link        :{{s.link}}
+    url         :{{s.url}}
+    id          :{{s.id}}
+    categories  :{{s.categories}}
+    path        :{{s.path}}
+    <!-- -->
 
 {% endfor %}
