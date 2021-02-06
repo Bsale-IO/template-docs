@@ -12,6 +12,6 @@ tihs cosa
     {{s.title}}
     {{s.name}}
     {{s.link}}
-    {{s.url}}
+    {{s.url | replace: ".md",""}}
 
 {% endfor %}
