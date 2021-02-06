@@ -2,5 +2,8 @@
 ## Navegation Menu
 
 - title: test
+  url: _pages/test
+
+- title: test 2
   url: test
 
