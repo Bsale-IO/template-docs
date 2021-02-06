@@ -2,3 +2,5 @@ name: test
 url: https://bsale-io.github.io
 baseurl: /template-docs
 markdown: Kramdown
+plugins:
+  - jemoji
