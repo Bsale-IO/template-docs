@@ -2,7 +2,7 @@
 <body>
     {% include header.html %}
     <!--buscador:start-->
-    <form action="{{ site.baseurl }}/search.html" method="get">
+    <form action="{{ site.baseurl }}/search" method="get">
         <label for="search-box">Search</label>
         <input type="text" id="search-box" name="query">
         <input type="submit" value="search">
@@ -14,5 +14,6 @@
             <div class="col">{{ content }}</div>
         </div>
     </div>
+    <footer>footer</footer>
 </body>
 </html>
