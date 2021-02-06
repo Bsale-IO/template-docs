@@ -3,5 +3,6 @@ url: https://bsale-io.github.io
 baseurl: /template-docs
 markdown: Kramdown
 layout: default
+page_excerpts: true
 plugins:
   - jemoji
