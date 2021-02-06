@@ -1,6 +1,4 @@
----
-layout: search
----
+
 <form action="{{site.baseurl}}/search.html" method="get">
     <label for="search-box">Search</label>
     <input type="text" id="search-box" name="query">
@@ -11,7 +9,7 @@ layout: search
   
   <script>
     window.store = {
-      {% for post in site.pages %}
+      {% for post in site.documents %}
         "{{ post.url | slugify }}": {
           "title": "{{ post.title | xml_escape }}",
           "author": "{{ post.author | xml_escape }}",
