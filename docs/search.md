@@ -9,7 +9,7 @@
           "author": "{{ entry.author | xml_escape }}",
           "category": "{{ entry.category | xml_escape }}",
           "content": {{ entry.content | strip_html | truncatewords: 20 | strip_newlines | jsonify }},
-          "url": "{{ entry.url | xml_escape }}"
+          "url": "{{site.baseurl}}{{ entry.url | xml_escape }}"
         },
       {% endfor %}
       {% for entry in site.posts %}
@@ -18,7 +18,7 @@
           "author": "{{ entry.author | xml_escape }}",
           "category": "{{ entry.category | xml_escape }}",
           "content": {{ entry.content | strip_html | truncatewords: 20| strip_newlines | jsonify }},
-          "url": "{{ entry.url | xml_escape }}"
+          "url": "{{site.baseurl}}{{ entry.url | xml_escape }}"
         }
         {% unless forloop.last %},{% endunless %}
       {% endfor %}
