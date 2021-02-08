@@ -5,8 +5,11 @@
 - size :{{site.collections.size}}
 
 {%for  coll in site.collections %}
-    name:{{coll.name}}
-    title: {{coll.title}}
+    - name:{{coll.name}}
+    - title: {{coll.title}}
+    - url {{coll.url}}
+    - content {{coll.content}}
+    - relative_path : {{coll.relative_path}}
 {% endfor %}
 
 
