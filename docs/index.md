@@ -10,11 +10,22 @@
     - url {{coll.url}}
     - content {{coll.content}}
     - relative_path : {{coll.relative_path}}
+    - directory {{coll.directory}}
+    - modified_time : {{coll.modified_time}}
 {% endfor %}
 
 {{ site.collections[0]}}
 {{ site.collections[1]}}
 
+{%for  coll in site.tester %}
+    - name:{{coll.name}}
+    - title: {{coll.title}}
+    - url {{coll.url}}
+    - content {{coll.content}}
+    - relative_path : {{coll.relative_path}}
+    - directory {{coll.directory}}
+    - modified_time : {{coll.modified_time}}
+{% endfor %}
 
 
 
