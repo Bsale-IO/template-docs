@@ -1,8 +1,13 @@
 
 
-site.collections
-{{site.collections.length}} length
-{{site.collections.size}} zise
+### site.collections
+- length: {{site.collections.length}} 
+- size :{{site.collections.size}}
+
+{%for  coll in site.collections %}
+    name:{{coll.name}}
+    title: {{coll.title}}
+{% endfor %}
 
 
 
