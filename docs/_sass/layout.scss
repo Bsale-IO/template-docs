@@ -1,5 +1,17 @@
 
 $gray-primary: #dee2e6;
+//structure
+body{
+    display:flex;
+    flex-direction: column;
+    main{
+        height:100%;
+    }
+}
+
+
+
+
 // header
 .navbar{
     background:white;
