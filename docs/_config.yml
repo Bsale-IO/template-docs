@@ -10,10 +10,11 @@ sass:
 collections:
   - tester
 
-collections:
-  tester:
-    output: true
-    permalink: /:collection/:name
+
+#collections:
+#  tester:
+#    output: true
+#    permalink: /:collection/:name
 
 # plugin
 plugins:
