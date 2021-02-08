@@ -15,3 +15,21 @@ sass:
 plugins:
   - jemoji
   - jekyll-sitemap
+
+# Collection
+
+defaults:
+  - scope:
+      path: ""
+      type: "liquid"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
