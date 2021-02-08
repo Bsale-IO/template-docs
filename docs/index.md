@@ -12,7 +12,8 @@
     - relative_path : {{coll.relative_path}}
 {% endfor %}
 
-{{ site.collections | jsonify}}
+{{ site.collections[0]}}
+{{ site.collections[1]}}
 
 
 
