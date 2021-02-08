@@ -1,3 +1,0 @@
-## liquid test 
-
-lorem 
