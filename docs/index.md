@@ -1,3 +1,13 @@
+
+
+site.collections
+{{site.collections.length}} length
+{{site.collections.size}} zise
+
+
+
+
+
 {% raw %}
 
 # h1 title
