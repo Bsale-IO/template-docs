@@ -5,6 +5,8 @@ markdown: Kramdown
 collections:
   test:
     output: true
-
+sass:
+  sass_dir: _sass
+  style: compressed
 plugins:
   - jemoji
