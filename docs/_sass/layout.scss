@@ -1,15 +1,17 @@
 @import "variables";
 //structure
-body{
-    display:flex;
+html, body {
+    height: 100%;
+}
+body {
+    display: flex;
     flex-direction: column;
-    height:100%;
-    
-    >* {
+    > *{
         flex-shrink: 0;
     }
-    main{
-        flex:1 0 auto;
+    main {
+        flex: 1 0 auto;
+        padding:1rem 0;
     }
 }
 
@@ -22,6 +24,11 @@ body{
     margin-bottom:1rem;
     border-bottom:$gray-primary;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.165);
+}
+//footer
+.footer{
+    background: $gray-primary;
+    padding:1rem;
 }
 
 // table
