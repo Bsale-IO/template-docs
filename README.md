@@ -1,4 +1,3 @@
-# template-docs
 
 | pages | |
 |---|---|
