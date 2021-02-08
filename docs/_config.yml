@@ -9,7 +9,7 @@ permalink:  pretty
 # sass
 sass:
   sass_dir: _sass
-  style:    :compressed
+  style:    compressed
 
 # plugin
 plugins:
