@@ -1,0 +1,62 @@
+/*header*/
+.navbar{
+    background:white;
+    margin-bottom:1rem;
+    border-bottom:#dee2e6;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.5);
+}
+
+/*table*/
+table {
+    max-width: 100%;
+    margin-bottom: 1rem;
+    background-color: transparent;
+}  
+ table   th,
+ table   td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+  
+table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid ;
+}
+table tbody tr:hover {
+    background-color: rgba(0,0,0,.075);
+}
+/*quote*/
+blockquote{
+    border-left:.25rem solid #dee2e6;
+    padding:0 1rem;
+}
+
+h1{
+    border-bottom: 2px solid #dee2e6;
+}
+h2{
+    border-bottom: 1px solid #dee2e6; 
+}
+
+
+
+/*list checkbox*/
+
+.task-list{
+    list-style-type: none;
+    padding-left:0
+}
+
+.task-list-item-checkbox{
+    margin-right: .5rem
+}
+
+.menu a{
+    display:block;
+    padding: .5rem 1rem ;
+}
+.menu a:hover{
+    background:silver;
+    text-decoration: none;
+}
