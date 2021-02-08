@@ -12,6 +12,8 @@
     - relative_path : {{coll.relative_path}}
 {% endfor %}
 
+{{ site.collections | jsonify}}
+
 
 
 
