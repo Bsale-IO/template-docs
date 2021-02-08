@@ -1,8 +1,8 @@
 name:       Bsale Templates Docs
 url:        https://bsale-io.github.io
 baseurl:    /template-docs
-permalink:  pretty
 markdown:   Kramdown
+permalink:  pretty
 collections:
   test:
     output: true
@@ -20,5 +20,21 @@ plugins:
 # Collection
 collections:
   liquid:
-    output: true
-    permalink: /liquid/:path/
+    output:     true
+    permalink:  /liquid/:path/
+    
+defaults:
+  - scope:
+      path: ""
+      type: "liquid"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
