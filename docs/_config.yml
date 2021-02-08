@@ -1,6 +1,6 @@
 name:       Bsale Templates Docs
-url:        https://bsale-io.github.io/template-docs
-baseurl:    /
+url:        https://bsale-io.github.io/
+baseurl:    /template-docs
 markdown:   Kramdown
 
 # link 
@@ -23,13 +23,3 @@ plugins:
 #    output:     true
 #    permalink:  /liquid/:path/
     
-defaults:
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "default"
-  - scope:
-      path: ""
-    values:
-      layout: "default"
