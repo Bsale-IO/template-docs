@@ -26,11 +26,6 @@ collections:
 defaults:
   - scope:
       path: ""
-      type: "liquid"
-    values:
-      layout: "default"
-  - scope:
-      path: ""
       type: "posts"
     values:
       layout: "default"
