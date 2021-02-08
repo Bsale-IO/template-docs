@@ -7,14 +7,11 @@ markdown:   Kramdown
 sass:
   style:    compressed
 
+
 collections:
-  - tester
-
-
-#collections:
-#  tester:
-#    output: true
-#    permalink: /:collection/:name
+  tester:
+    output: true
+    permalink: /:collection/:name
 
 # plugin
 plugins:
