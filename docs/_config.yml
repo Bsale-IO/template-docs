@@ -1,15 +1,15 @@
-name: test
-url: https://bsale-io.github.io
-baseurl: /template-docs
-markdown: Kramdown
+name:       Bsale Templates Docs
+url:        https://bsale-io.github.io
+baseurl:    /template-docs
+markdown:   Kramdown
 collections:
   test:
     output: true
-    
+
 # sass
 sass:
   sass_dir: _sass
-  style: compressed
+  style:    :compressed
 
 # plugin
 plugins:
