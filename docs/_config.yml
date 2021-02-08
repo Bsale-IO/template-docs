@@ -18,10 +18,10 @@ plugins:
   - jekyll-sitemap
 
 # Collection
-collections:
-  liquid:
-    output:     true
-    permalink:  /liquid/:path/
+#collections:
+# liquid:
+#    output:     true
+#    permalink:  /liquid/:path/
     
 defaults:
   - scope:
