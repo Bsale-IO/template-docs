@@ -1,3 +1,5 @@
+@import "variables";
+
 .highlight pre { background-color: #272822; color:white; padding:.5rem}
 .highlight .hll { background-color: #272822; }
 .highlight .c { color: #75715e } /* Comment */
@@ -63,3 +65,11 @@
 .highlight .gu { color: #75715e; } /* Generic.Subheading & Diff Unified/Comment? */
 .highlight .gd { color: #f92672; } /* Generic.Deleted & Diff Deleted */
 .highlight .gi { color: #a6e22e; } /* Generic.Inserted & Diff Inserted */
+
+.language-plaintext{
+    color:#e83e8c;
+    background: $gray-primary;
+    border: 1px solid $gray-primary-border;
+    padding:.25rem .5rem;
+    display:inline-block;
+}
