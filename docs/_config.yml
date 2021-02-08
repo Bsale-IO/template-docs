@@ -5,7 +5,6 @@ markdown:   Kramdown
 
 # link 
 permalink:  pretty
-relative_permalinks: true
 
 # sass
 sass:
