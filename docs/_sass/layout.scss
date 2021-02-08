@@ -1,42 +1,47 @@
-/*header*/
+
+$gray-primary: #dee2e6;
+// header
 .navbar{
     background:white;
     margin-bottom:1rem;
-    border-bottom:#dee2e6;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.5);
+    border-bottom:$gray-primary;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.165);
 }
 
-/*table*/
+// table
 table {
     max-width: 100%;
     margin-bottom: 1rem;
     background-color: transparent;
-}  
- table   th,
- table   td {
-    padding: 0.75rem;
-    vertical-align: top;
-    border-top: 1px solid #dee2e6;
+    th, td {
+        padding: 0.75rem;
+        vertical-align: top;
+        border-top: 1px solid $gray-primary;
+    }
+    thead th {
+        vertical-align: bottom;
+        border-bottom: 2px solid ;
+    }
+    tbody tr:hover {
+        background-color: rgba(0,0,0,.075);
+    }
 }
-  
-table thead th {
-    vertical-align: bottom;
-    border-bottom: 2px solid ;
-}
-table tbody tr:hover {
-    background-color: rgba(0,0,0,.075);
-}
-/*quote*/
+
+// quote
 blockquote{
-    border-left:.25rem solid #dee2e6;
+    border-left:.25rem solid $gray-primary;
     padding:0 1rem;
 }
 
+// titulos
 h1{
-    border-bottom: 2px solid #dee2e6;
+    border-bottom: 2px solid $gray-primary;
 }
 h2{
-    border-bottom: 1px solid #dee2e6; 
+    border-bottom: 1px solid $gray-primary; 
+}
+h1,h2,h3,h4,h5,h6{
+    padding:.5rem 0;
 }
 
 
@@ -45,18 +50,20 @@ h2{
 
 .task-list{
     list-style-type: none;
-    padding-left:0
+    padding-left:0;
+    .task-list-item-checkbox{
+        margin-right: .5rem
+    }
 }
 
-.task-list-item-checkbox{
-    margin-right: .5rem
-}
-
-.menu a{
-    display:block;
-    padding: .5rem 1rem ;
-}
-.menu a:hover{
-    background:silver;
-    text-decoration: none;
+// menu
+.menu{
+    a{
+        display:block;
+        padding: .5rem 1rem ;
+        &:hover{
+            background: $gray-primary;
+            text-decoration: none;
+        }
+    }
 }
