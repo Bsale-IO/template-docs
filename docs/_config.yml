@@ -2,10 +2,10 @@ name:       Bsale Templates Docs
 url:        https://bsale-io.github.io
 baseurl:    /template-docs
 markdown:   Kramdown
+
+# link 
 permalink:  pretty
-collections:
-  test:
-    output: true
+relative_permalinks: true
 
 # sass
 sass:
