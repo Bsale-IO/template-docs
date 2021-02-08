@@ -1,6 +1,6 @@
 name:       Bsale Templates Docs
-url:        https://bsale-io.github.io
-baseurl:    /template-docs
+url:        https://bsale-io.github.io/template-docs
+baseurl:    /
 markdown:   Kramdown
 
 # link 
