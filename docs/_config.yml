@@ -14,3 +14,4 @@ sass:
 # plugin
 plugins:
   - jemoji
+  - jekyll-sitemap
