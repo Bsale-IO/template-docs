@@ -1,3 +1,11 @@
+/*header*/
+.navbar{
+    background:white;
+    margin-bottom:1rem;
+    border-bottom:#dee2e6;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.5);
+}
+
 /*table*/
 table {
     max-width: 100%;
