@@ -2,7 +2,7 @@ name:       Bsale Templates Docs
 url:        https://bsale-io.github.io/
 baseurl:    /template-docs
 markdown:   Kramdown
-future: true
+
 
 # sass
 sass:
@@ -12,7 +12,8 @@ sass:
 collections:
   tester:
     output: true
-    permalink: /:collection/:name
+
+future: true
 
 # plugin
 plugins:
