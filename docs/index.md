@@ -17,7 +17,17 @@
 {{ site.collections[0]}}
 {{ site.collections[1]}}
 
-{%for  coll in site.tester %}
+{%for  coll in site.collections['tester'] %}
+    - name:{{coll.name}}
+    - title: {{coll.title}}
+    - url {{coll.url}}
+    - content {{coll.content}}
+    - relative_path : {{coll.relative_path}}
+    - directory {{coll.directory}}
+    - modified_time : {{coll.modified_time}}
+{% endfor %}
+
+{%for  coll in site.collections.tester %}
     - name:{{coll.name}}
     - title: {{coll.title}}
     - url {{coll.url}}
