@@ -12,8 +12,8 @@
 <ul> 
     {%for  coll in site.tester %}
         <li>
-            <a href="{{coll.title}}">
-                {{coll.url}}
+            <a href="{{coll.url}}">
+                {{coll.title}}
             </a>
         </li>
     {% endfor %}
