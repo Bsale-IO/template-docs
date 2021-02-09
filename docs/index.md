@@ -10,9 +10,13 @@
 
 ## Tester
 <ul> 
-{%for  coll in site.tester %}
-    <li><a href="{{coll.title}}"><a>{{coll.url}}</a></li>
-{% endfor %}
+    {%for  coll in site.tester %}
+        <li>
+            <a href="{{coll.title}}">
+                {{coll.url}}
+            </a>
+        </li>
+    {% endfor %}
 </ul>
 
 
