@@ -4,40 +4,16 @@
 - length: {{site.collections.length}} 
 - size :{{site.collections.size}}
 
-{%for  coll in site.collections %}
-    - name:{{coll.name}}
-    - title: {{coll.title}}
-    - url {{coll.url}}
-    - content {{coll.content}}
-    - relative_path : {{coll.relative_path}}
-    - directory {{coll.directory}}
-    - modified_time : {{coll.modified_time}}
-{% endfor %}
 
-{{ site.collections[0]}}
-{{ site.collections[1]}}
 
-{%for  coll in site.collections['tester'] %}
-    - name:{{coll.name}}
-    - title: {{coll.title}}
-    - url {{coll.url}}
-    - content {{coll.content}}
-    - relative_path : {{coll.relative_path}}
-    - directory {{coll.directory}}
-    - modified_time : {{coll.modified_time}}
-{% endfor %}
 
-{%for  coll in site.collections.tester %}
-    - name:{{coll.name}}
-    - title: {{coll.title}}
-    - url {{coll.url}}
-    - content {{coll.content}}
-    - modified_time : {{coll.modified_time}}
-{% endfor %}
 
+## Tester
+<ul> 
 {%for  coll in site.tester %}
-    - [{{coll.title}}]({{coll.url}})
+    <li><a href="{{coll.title}}"><a>{{coll.url}}</a></li>
 {% endfor %}
+</ul>
 
 
 
