@@ -10,7 +10,9 @@ sass:
 
 
 collections:
-  tester:
+  componentes:
+    output: true
+  liquid:
     output: true
 
 future: true
