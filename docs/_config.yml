@@ -14,6 +14,7 @@ collections:
     output: true
   liquid:
     output: true
+    render_with_liquid: false
 
 future: true
 

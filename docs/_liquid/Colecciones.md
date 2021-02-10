@@ -4,7 +4,7 @@ title: Colecciones y Busquedas
 published: true
 ---
 
-{% raw %}
+
 
 >Las variables de colección las puedes usar en 4 tipos de páginas: <br>
 > _**Colección**_, _**Marca**_, _**Búsqueda**_ e [[Inicio | Plantilla Inicio]]
@@ -12,7 +12,7 @@ published: true
 > Para más detalles de _**Búsqueda**_ revisar _[[Parámetros de búsqueda]]_
 
 ### Variables de la colecciones 
-
+{% raw %}
 | variable | descripción |
 | -------- | ----------- |
 | `{{collection.title}}` | Corresponde al Nombre de la Colección |
@@ -25,12 +25,13 @@ published: true
 | `{{collection.sorting}}` | ***en Beta*** |
 | `{{collection.products}}` | `objeto` Corresponde a los **Productos** de la colección.|
 | `{{collection.image}}` | Corresponde a la **Url** de la imágen en la colección. |
+{% endraw %}
 
 ### Variables de los productos de una colección
 
 Para mostrar los productos de una colección debe iterar sobre la variable `{{collection.products}}`
 
-```liquid
+{% highlight liquid %} 
 {% for product in collection.products %}
   {{product.id}}
   {{product.productId}}
@@ -54,7 +55,7 @@ Para mostrar los productos de una colección debe iterar sobre la variable `{{co
   {{product.allowNegativeStock}}
   {{product.stockControl}}    
 {% endfor%}
-```
+{% endhighlight %}
 
 | variable | descripción |
 | -------- | ----------- |
