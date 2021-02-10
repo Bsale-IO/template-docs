@@ -66,15 +66,11 @@
 .highlight .gd { color: #f92672; } /* Generic.Deleted & Diff Deleted */
 .highlight .gi { color: #a6e22e; } /* Generic.Inserted & Diff Inserted */
 
-.language-plaintext{
+code.language-plaintext{
     color:#e83e8c;
     background: $gray-primary;
     border: 1px solid $gray-primary-border;
     padding:.125rem .25rem;
     border-radius: .25rem;
     display:inline-block;
-}
-
-.highlighter-rouge:not(.language-plaintext){
-    position:relative;
 }

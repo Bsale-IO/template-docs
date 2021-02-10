@@ -7,9 +7,7 @@ published: true
 
 {% raw %}
 
-<sub><sup>[[Home]] > [[Liquid Bsale]] > [[Variables | Variables#tipos-de-variables-en-bsale]] > Productos </sup></sub>
-
-Cada producto tiene una página particular dentro del sitio que puedes encontrar en la url `www.tusitio.cl/product/[nombre producto]` esta se genera en base a la [[Plantilla de Producto | Plantilla Producto]]
+Cada producto tiene una página particular dentro del sitio que puedes encontrar en la url `www.tusitio.cl/product/[nombre producto]` esta se genera en base a la [Plantilla de Producto](Plantilla Producto)
 
 ## Información del Producto
 
@@ -58,7 +56,7 @@ Cada producto tiene una página particular dentro del sitio que puedes encontrar
 Un producto puede tener más de una sola descripción general como por ejemplo la ficha técnica para traer esta información a pantalla es necesario realizar un arreglo ``{%for%}`` 
 
 **Se utiliza:**
-```css
+```liquid
 {% for descripcion in product.descriptions%}
      {{descripcion.descriptionName}}
      {{descripcion.id}}
@@ -84,7 +82,7 @@ Para imprimir las variantes dentro de la página producto debo usar en arreglo {
 
 **Se utiliza:**
 
-```
+```liquid
 {% for variante in variant %}
    {{variante.title}}
    {{variante.price}}
@@ -127,7 +125,7 @@ Para imprimir las variantes dentro de la página producto debo usar en arreglo {
 ### Stock de la Variante:
 
 Una forma de obtener el stock de cada variante es emplear el filtro `get_stock_variant`  [[ver link | Filtros-de-stock]]
-```
+```liquid
 /* variante 1 = 20, variante 2 = 7 */
 {% for var in variant %}
    {% assign variant_stock = var.id | get_stock_variant %}
@@ -136,7 +134,7 @@ Una forma de obtener el stock de cada variante es emplear el filtro `get_stock_v
 ```
 Si por el contrario necesitas información más detalla del stock como las tiendas en las que esta puedes utilizar la siguiente estructura. 
 
-```
+```liquid
 {% for var in variant %}
    {% for stock in var.stock %}
       {{stock.officeId}}
@@ -186,7 +184,7 @@ Donde:
 Corresponde a un grupo/arreglo de accesorios de un producto.
 
 Se utiliza:
-```
+```liquid
 
 {% for product in accessories%}
 	{{product.title}}
@@ -219,7 +217,7 @@ Se utiliza:
 Corresponde al grupo/arreglo relacionados a un producto.
 
 Se utiliza:
-```
+```liquid
 
 {% for product in related%}
 	{{product.title}}
@@ -243,7 +241,7 @@ Se utiliza:
 ## Atributos del producto
 
 funciona si el producto no tiene variantes
-```
+```liquid
     /*seleccion los atributos que no deseas mostrar */
     {% assign deleteAttributes = "Material,Color" | split: ',' %}
     
