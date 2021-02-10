@@ -44,7 +44,7 @@ Se utiliza:
 
 ## Mostrar los productos de una colección
 
-``` css
+```liquid
 {% for product in collection.products %}
   {{product.id}}
   {{product.productId}}
@@ -144,21 +144,21 @@ Se utiliza:
 * Ubicar el componente que muestra la colección.
 * Dentro del componente existe la siguiente estructura de código que se debe eliminar.
 
-```js
+```liquid
 //Eliminar
 {%if product.classification != 1 %}
      {% assign stock = product.id | get_product_stock%}
 {% endif %}
 ```
 * Luego se debe ubicar la estructura de código que muestra la etiqueta sin stock
-```js
+```liquid
 //Reemplazar por la nueva estructura
 {% if stock < 1 and product.classification != 1%}
     <div class="bs-stock">Sin stock</div>
 {% endif%}
 ```
 * Finalmente se debe reemplazar el código anterior por la estructura nueva de código
-```js
+```liquid
 //nueva estructura
 {% assign outStock = false %}
 {% if product.classification != 1 %}
@@ -175,7 +175,7 @@ Se utiliza:
 * Reemplazar la validación por la variable outStock
 * La estructura del botón se encuentra en la parte final del componente.
 
-```js
+```liquid
 //Estructura  del boton agregar al carro desde colección
 {% if addToCart %}
    <div class="bs-product-cart mt-auto">
@@ -193,7 +193,7 @@ Se utiliza:
 ```
 
 ## Otras descripciones del producto
-```js
+```liquid
 {% for product in collection.products %}
    {% for des in product.descriptions %}
       {{des.id}}
@@ -212,7 +212,7 @@ Se utiliza:
 Hay dos formas de imprimir las imágenes del producto.
 
 1. Mediante la variable `{{product.defaultImage}}` 
-```django
+```liquid
 {% for product in collection %}
    ...
    <img src="{{ product.defaultImage | image_url }}" title="{{product.title}}"> 
@@ -221,7 +221,7 @@ Hay dos formas de imprimir las imágenes del producto.
 ```
 
 2. Iterando dentro del objeto `{{producto.images}}`
-```django
+```liquid
 {% for product in collection %}
    ...
    {% for img in product.images %}
@@ -245,7 +245,7 @@ Sin embargo, para definir el número de productos que esta mostrando la pagina d
 
 
 
-```js
+```liquid
 {% assign item_in_page = item_per_page %}
 {% for i in collection %}
    {%if forloop.last %} 
@@ -260,7 +260,7 @@ Sin embargo, para definir el número de productos que esta mostrando la pagina d
 ```
 
 Utilización 
-```html
+```liquid
 <span>{{item_in_page}}</span> de <span>{{total_item}}</small>
 ```
 
@@ -268,20 +268,12 @@ Utilización
 
 Para poder agregar esta funcionalidad en los templates, es necesario agregar el siguiente bloque de código en el componente : Coleccion - Buscador - Marca
 
-```html
+```liquid
 {% if collection.image %}
-     <img class="image-collection" src="{{collection.image}}">
+     <img src="{{collection.image}}">
 {%endif%}
 ```
-Ademas agregar un bloque de código CSS en el archivo modificaciones.css
 
-```CSS
-.image-collection {
-    width:100%;
-    max-height: 18.75rem;
-    margin-bottom:1rem;
-}
-```
 Estructura final del componente
 ```html
 <section class="bs-collection">
