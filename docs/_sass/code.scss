@@ -69,15 +69,16 @@
 
 
 .rouge-table{
+    pre{
+        margin:0;
+    }
     td,th{
         border:0 none;
         background:#272822;
     }
     .rouge-gutter{
+        text-align:right;
         opacity:0.5;
-        pre{ 
-            text-align:right;
-        }   
     }
     .rouge-code{
         width:100%;
@@ -94,6 +95,5 @@ code.language-plaintext{
 .language-liquid{
     .highlight{
         .p{color: #a6e22e}
-    }
-    
+    }  
 }
