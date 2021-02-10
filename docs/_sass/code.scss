@@ -71,9 +71,9 @@
 .rouge-table{
     td,th{
         border:0 none;
+        background:#272822;
     }
     .rouge-gutter{
-        background:#272822;
         opacity:0.5;
         pre{ 
             text-align:right;
@@ -81,7 +81,6 @@
     }
     .rouge-code{
         width:100%;
-        background:#272822;
     }
 }
 
