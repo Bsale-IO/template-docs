@@ -4,7 +4,7 @@ title: Colecciones y Busquedas
 published: true
 ---
 
-
+{% raw %}
 
 >Las variables de colección las puedes usar en 4 tipos de páginas: <br>
 > _**Colección**_, _**Marca**_, _**Búsqueda**_ e [[Inicio | Plantilla Inicio]]
@@ -317,3 +317,5 @@ Estructura final del componente
     </div>
 </section>
 ```
+
+{% endraw %}
