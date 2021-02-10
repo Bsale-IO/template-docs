@@ -57,7 +57,7 @@ Un producto puede tener más de una sola descripción general como por ejemplo l
 
 **Se utiliza:**
 ```liquid
-{% for descripcion in product.descriptions%}
+{% for descripcion in product.descriptions %}
      {{descripcion.descriptionName}}
      {{descripcion.id}}
      {{descripcion.html}}
@@ -167,7 +167,7 @@ Corresponde a un grupo/arreglo de imágenes del producto.
    {{image.LegendImage}}
    {{image.href}}
    {{image.state}}
-{%endfor%}
+{% endfor %}
 ```
 Donde:
 
@@ -186,7 +186,7 @@ Corresponde a un grupo/arreglo de accesorios de un producto.
 Se utiliza:
 ```liquid
 
-{% for product in accessories%}
+{% for product in accessories %}
 	{{product.title}}
 	{{product.id}}
 	{{product.id_producto}}
@@ -203,7 +203,7 @@ Se utiliza:
 	{{product.discount_name}}
 	{{product.discount_cant}}
 	{{product.final_price}}
-{% endfor%}
+{% endfor %}
 
 
 
