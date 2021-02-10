@@ -12,7 +12,7 @@
       </form>
     <!--search:end-->
   {% for item in site.data.menus %}
-    <a href="{{item.url}}" title="{{item.title}}">
+    <a href="{{item.url | relative_url}}" title="{{item.title}}">
       {{item.title}}
     </a>
   {% endfor %}
