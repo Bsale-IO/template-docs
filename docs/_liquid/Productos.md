@@ -1,5 +1,5 @@
 ---
-layout: liquid
+layout: collection
 title: Productos
 published: true
 ---

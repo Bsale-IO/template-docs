@@ -1,9 +1,9 @@
 ---
-layout: liquid
+layout: collection
 title: load json
 published: true
 ---
-
+{% raw %}
 
 
 Los componente Load fueron agregados para cargar información en una variable global `Bsale` que puede ser consultada desde cualquier página en los template 4.0.0.
@@ -132,3 +132,4 @@ El componente **load checkout** debe ir dentro del componente `checkout exito` m
 </script>
 <!----------------------------------------------------------->
 ```
+{% endraw %}

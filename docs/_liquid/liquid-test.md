@@ -1,5 +1,5 @@
 ---
-layout: liquid
+layout: collection
 title: Liquid Test
 published: true
 ---
