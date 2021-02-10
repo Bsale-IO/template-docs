@@ -11,21 +11,7 @@ published: true
 
 > Para más detalles de _**Búsqueda**_ revisar _[[Parámetros de búsqueda]]_
 
-
-Se utiliza:
-```css
-     {{collection.title}} 
-     {{collection.description}}
-     {{collection.link}}
-     {{collection.size}}
-     {{collection.limitPrice}}
-     {{collection.limitPrice.maxPrice}}
-     {{collection.limitPrice.minPrice}}
-     {{collection.attributes}}
-     {{collection.sorting}}
-     {{collection.products}}
-     {{collection.image}}
-```
+### Variables de la colecciones 
 
 | variable | descripción |
 | -------- | ----------- |
@@ -40,9 +26,9 @@ Se utiliza:
 | `{{collection.products}}` | `objeto` Corresponde a los **Productos** de la colección.|
 | `{{collection.image}}` | Corresponde a la **Url** de la imágen en la colección. |
 
+### Variables de los productos de una colección
 
-
-## Mostrar los productos de una colección
+Para mostrar los productos de una colección debe iterar sobre la variable `{{collection.products}}`
 
 ```liquid
 {% for product in collection.products %}
@@ -116,7 +102,7 @@ Se utiliza:
   * Si tan solo un producto CONTROLA STOCK dentro del pack, todo el pack pasa a CONTROLAR STOCK. La variable stockControl será igual a 1.
   * Si tan solo un producto NO PERMITE VENTA CON STOCK NEGATIVO dentro del pack, todo el pack NO PERMITIRÁ LA VENTA CON STOCK NEGATIVO. La variable allowNegativeStock será igual a 0. 
 
-```js
+```html
 {% assign outStock = false %}
 {% if product.classification != 1 %}
    {% if product.totalStock < 1 and product.stockControl == 1 %}
@@ -128,38 +114,29 @@ Se utiliza:
 {%endif%}
 ```
 
-> ### Forma antigua `DESCONTINUADA`
->
-> Para obtener el stock del producto debes ~definir una nueva variable dentro del arreglo `{%for%}`~
->
-> ```js
-> {% for product in collection %}
->   {% assign product_stock = product.id | get_product_stock %} // define la variable producto_stock
->   {{ product_stock }} // llama a la variable
-> {% endfor %}
-> ```
 
 ### Implementación
 
 * Ubicar el componente que muestra la colección.
 * Dentro del componente existe la siguiente estructura de código que se debe eliminar.
 
-```liquid
-//Eliminar
+```html
+<!--Reemplazar por la nueva estructura-->
 {%if product.classification != 1 %}
      {% assign stock = product.id | get_product_stock%}
 {% endif %}
 ```
 * Luego se debe ubicar la estructura de código que muestra la etiqueta sin stock
-```liquid
-//Reemplazar por la nueva estructura
+
+```html
+<!--Reemplazar por la nueva estructura-->
 {% if stock < 1 and product.classification != 1%}
     <div class="bs-stock">Sin stock</div>
 {% endif%}
 ```
 * Finalmente se debe reemplazar el código anterior por la estructura nueva de código
-```liquid
-//nueva estructura
+```html
+<!--nueva estructura-->
 {% assign outStock = false %}
 {% if product.classification != 1 %}
    {% if product.totalStock < 1 and product.stockControl == 1 %}
@@ -175,8 +152,8 @@ Se utiliza:
 * Reemplazar la validación por la variable outStock
 * La estructura del botón se encuentra en la parte final del componente.
 
-```liquid
-//Estructura  del boton agregar al carro desde colección
+```html
+<!--Estructura  del boton agregar al carro desde colección-->
 {% if addToCart %}
    <div class="bs-product-cart mt-auto">
       {% if outStock %} //debe quedar así 
@@ -212,7 +189,7 @@ Se utiliza:
 Hay dos formas de imprimir las imágenes del producto.
 
 1. Mediante la variable `{{product.defaultImage}}` 
-```liquid
+```html
 {% for product in collection %}
    ...
    <img src="{{ product.defaultImage | image_url }}" title="{{product.title}}"> 
@@ -221,7 +198,7 @@ Hay dos formas de imprimir las imágenes del producto.
 ```
 
 2. Iterando dentro del objeto `{{producto.images}}`
-```liquid
+```html
 {% for product in collection %}
    ...
    {% for img in product.images %}
@@ -245,7 +222,7 @@ Sin embargo, para definir el número de productos que esta mostrando la pagina d
 
 
 
-```liquid
+```html
 {% assign item_in_page = item_per_page %}
 {% for i in collection %}
    {%if forloop.last %} 
@@ -260,7 +237,7 @@ Sin embargo, para definir el número de productos que esta mostrando la pagina d
 ```
 
 Utilización 
-```liquid
+```html
 <span>{{item_in_page}}</span> de <span>{{total_item}}</small>
 ```
 
@@ -268,7 +245,7 @@ Utilización
 
 Para poder agregar esta funcionalidad en los templates, es necesario agregar el siguiente bloque de código en el componente : Coleccion - Buscador - Marca
 
-```liquid
+```html
 {% if collection.image %}
      <img src="{{collection.image}}">
 {%endif%}
