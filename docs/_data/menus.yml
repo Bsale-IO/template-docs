@@ -1,12 +1,7 @@
 ## /_data/navegation.yml
 ## Navegation Menu
 
-- title: test
-  url: _pages/test
+- title: liquid
+  url: liquid
 
-- title: test 2
-  url: test
-
-- title: test 3
-  url: site/test
 
