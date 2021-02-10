@@ -31,31 +31,31 @@ published: true
 
 Para mostrar los productos de una colección debe iterar sobre la variable `{{collection.products}}`
 
-{% highlight liquid %} 
+```liquid 
 {% for product in collection.products %}
-  {{product.id}}
-  {{product.productId}}
-  {{product.title}}
-  {{product.link}}
-  {{product.notice}}
-  {{product.defaultImage}}
-  {{product.images}}
-  {{product.priceList}}
-  {{product.videoUrl}}
-  {{product.description}}
-  {{product.descriptions}}
-  {{product.variantId}}
-  {{product.discountRate}}
-  {{product.discountCant}}
-  {{product.finalPrice}}
-  {{product.fpWithoutDiscount}}
-  {{product.taxPrice}}
-  {{product.brand}}
-  {{product.totalStock}}
-  {{product.allowNegativeStock}}
-  {{product.stockControl}}    
+  {{ product.id }}
+  {{ product.productId }}
+  {{ product.title }}
+  {{ product.link }}
+  {{ product.notice }}
+  {{ product.defaultImage }}
+  {{ product.images }}
+  {{ product.priceList }}
+  {{ product.videoUrl }}
+  {{ product.description }}
+  {{ product.descriptions }}
+  {{ product.variantId }}
+  {{ product.discountRate }}
+  {{ product.discountCant }}
+  {{ product.finalPrice }}
+  {{ product.fpWithoutDiscount }}
+  {{ product.taxPrice }}
+  {{ product.brand }}
+  {{ product.totalStock }}
+  {{ product.allowNegativeStock }}
+  {{ product.stockControl }}    
 {% endfor%}
-{% endhighlight %}
+```
 
 | variable | descripción |
 | -------- | ----------- |
