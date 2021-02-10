@@ -103,16 +103,16 @@ Para imprimir las variantes dentro de la página producto debo usar en arreglo {
 {% endfor %}
 ```
 
- Código Antiguo | Código | Descripción |
+|Código Antiguo | Código | Descripción |
 | -------------- | --------------------- | ------------------- |
-| <sup>`{{var.descripcion_variante}}`</sup> | `{{var.title}}` | Nombre de la variante |
-| <sup>`{{var.valor_variante}}`</sup> | `{{var.price}}` | `número` Precio de la variante |
-| <sup>`{{var.id_variante_producto}}`</sup> |  `{{var.id}}` | `número` id de la variante |
-| <sup>`{{var.discount_name}}`</sup> |  `{{var.discount.name}}` | Nombre del Descuento |
-| <sup>`{{var.discount_rate}}`</sup> |  `{{var.discount.percent}}` | `número` Porcentaje de Descuento |
-| <sup>`{{var.discount_cant}}`</sup> | `{{var.discount.minimumQuantity}}` | Cantidad Mínima de productos para que se aplique el descuento |
-| <sup>`{{var.final_price}}`</sup> |  `{{var.finalPrice}}` | `numero`Precio con Descuento |
-| <sup>`{{var.permite_decimal}}`</sup> |  `{{var.hasDecimal}}` |  |
+| `{{var.descripcion_variante}}` | `{{var.title}}` | Nombre de la variante |
+| `{{var.valor_variante}}` | `{{var.price}}` | `número` Precio de la variante |
+| `{{var.id_variante_producto}}` |  `{{var.id}}` | `número` id de la variante |
+| `{{var.discount_name}}` |  `{{var.discount.name}}` | Nombre del Descuento |
+| `{{var.discount_rate}}` |  `{{var.discount.percent}}` | `número` Porcentaje de Descuento |
+| `{{var.discount_cant}}` | `{{var.discount.minimumQuantity}}` | Cantidad Mínima de productos para que se aplique el descuento |
+| `{{var.final_price}}`|  `{{var.finalPrice}}` | `numero`Precio con Descuento |
+| `{{var.permite_decimal}}` |  `{{var.hasDecimal}}` |  |
 |      | `{{var.sku}}` | Sku de la variante |
 |     | `{{var.unlimitedStock}}` | `boolean`  |
 |     | `{{var.allowNegativeStock}}` | `boolean` |
@@ -124,7 +124,8 @@ Para imprimir las variantes dentro de la página producto debo usar en arreglo {
 
 ### Stock de la Variante:
 
-Una forma de obtener el stock de cada variante es emplear el filtro `get_stock_variant`  [[ver link | Filtros-de-stock]]
+Una forma de obtener el stock de cada variante es emplear el filtro `get_stock_variant`  (ver link)[Filtros-de-stock]
+
 ```liquid
 /* variante 1 = 20, variante 2 = 7 */
 {% for var in variant %}
