@@ -3,7 +3,7 @@
 <ul>
 {% for li in site.liquid %}
     <li>
-        <a href="{{li.url}}">
+        <a href="{{site.baseurl}}{{li.url}}">
             {{li.title}}
         </a>
     </li>
