@@ -3,7 +3,7 @@ url:        https://bsale-io.github.io/
 baseurl:    /template-docs
 markdown:   Kramdown
 
-Kramdown:
+kramdown:
   syntax_highlighter: rouge
 
   syntax_highlighter_opts:
