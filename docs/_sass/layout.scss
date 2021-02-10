@@ -37,13 +37,16 @@ table {
     margin-bottom: 1rem;
     background-color: transparent;
     th, td {
-        padding: 0.75rem;
+        padding: .5rem 0.75rem;
         vertical-align: top;
-        border-top: 1px solid $gray-primary;
+        border: 1px solid $gray-primary;
     }
     thead th {
         vertical-align: bottom;
-        border-bottom: 2px solid ;
+        color: #495057;
+        background-color: #e9ecef;
+        border-color: #dee2e6;
+        border-bottom: 2px solid $gray-primary ;
     }
     tbody tr:hover {
         background-color: rgba(0,0,0,.075);
