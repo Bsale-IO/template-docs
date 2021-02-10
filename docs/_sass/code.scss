@@ -67,9 +67,8 @@
 .highlight .gi { color: #a6e22e; } /* Generic.Inserted & Diff Inserted */
 
 code.language-plaintext{
-    color:#e83e8c;
-    background: $gray-primary;
-    border: 1px solid $gray-primary-border;
+    background:#272822; 
+    color:white;
     padding:.125rem .25rem;
     border-radius: .25rem;
     display:inline-block;
