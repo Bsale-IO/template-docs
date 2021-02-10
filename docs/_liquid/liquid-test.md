@@ -35,6 +35,7 @@ published: true
 
 ### html
 ```html
+<section>
 {% if variable.var == 0 %}
     <script> 
         var liquid = {{ liquid }}
@@ -51,13 +52,22 @@ published: true
             return var + 1 
         }
     <script>
+    <style>
+        .class{
+            color: {{color}};
+            
+        }
+    </style>
 {% elsif var[0] %}
-    <div class="valor" id="id"> {{ variable.var}}</div>
+    <div class="valor" id="id"> 
+        {{ variable.var}}
+    </div>
 {% else %}
     {% for i in iteration %}
         {{ i.value }}
     {% endfor %}
 {% endif %}
+</section>
 ```
 
 
