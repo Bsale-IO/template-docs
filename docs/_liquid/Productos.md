@@ -12,6 +12,7 @@ published: true
 Cada producto tiene una página particular dentro del sitio que puedes encontrar en la url `www.tusitio.cl/product/[nombre producto]` esta se genera en base a la [[Plantilla de Producto | Plantilla Producto]]
 
 ## Información del Producto
+
 | Código | Descripción |
 | --------------------- | ------------------- |
 | `{{ product.title }}` | Nombre del Producto |
@@ -29,12 +30,15 @@ Cada producto tiene una página particular dentro del sitio que puedes encontrar
 | `{{ product.classification }}` | tipo de producto ( `0` = producto, `1` = servicio, `3` = pack) |
 
 ### Descuento
+
 | Código | Descripción |
 | --------------------- | ------------------- |
 | `{{product.discountRate}}` | Porcentaje de **Descuento** |
 | `{{product.discountName}}` | Nombre del **Descuento** |
 | `{{product.discountCant}}` | Número de unidades sobre las que se aplica el descuento **Descuento** ej: desde 2 productos |
+
 ### Precio
+
 | Código | Descripción |
 | --------------------- | ------------------- |
 | `{{ product.priceList }}` | ID de la lista de precio |
@@ -42,6 +46,7 @@ Cada producto tiene una página particular dentro del sitio que puedes encontrar
 | `{{product.final_price}}` | Precio final del producto aplicando descuentos |
 
 ### Marca
+
 | Código | Descripción |
 | --------------------- | ------------------- |
 | `{{ product.brand.name }}` | Nombre de la marca |
@@ -49,6 +54,7 @@ Cada producto tiene una página particular dentro del sitio que puedes encontrar
 | `{{product.brand.link}}` | url `misitio.com/brand/[nombre marca]` |
 
 ## Otras Descripciones:
+
 Un producto puede tener más de una sola descripción general como por ejemplo la ficha técnica para traer esta información a pantalla es necesario realizar un arreglo ``{%for%}`` 
 
 **Se utiliza:**
@@ -77,7 +83,8 @@ Los Productos se pueden separar en variantes por ejemplo un vendo unos zapatos y
 Para imprimir las variantes dentro de la página producto debo usar en arreglo {%for%}
 
 **Se utiliza:**
-```css
+
+```
 {% for variante in variant %}
    {{variante.title}}
    {{variante.price}}
@@ -97,6 +104,7 @@ Para imprimir las variantes dentro de la página producto debo usar en arreglo {
    {{variante.shipping.deph}}
 {% endfor %}
 ```
+
  Código Antiguo | Código | Descripción |
 | -------------- | --------------------- | ------------------- |
 | <sup>`{{var.descripcion_variante}}`</sup> | `{{var.title}}` | Nombre de la variante |
@@ -117,8 +125,9 @@ Para imprimir las variantes dentro de la página producto debo usar en arreglo {
 |  | `{{var.shipping.deph}}` | Profundidad de la caja del producto |
 
 ### Stock de la Variante:
+
 Una forma de obtener el stock de cada variante es emplear el filtro `get_stock_variant`  [[ver link | Filtros-de-stock]]
-```css
+```
 /* variante 1 = 20, variante 2 = 7 */
 {% for var in variant %}
    {% assign variant_stock = var.id | get_stock_variant %}
@@ -127,7 +136,7 @@ Una forma de obtener el stock de cada variante es emplear el filtro `get_stock_v
 ```
 Si por el contrario necesitas información más detalla del stock como las tiendas en las que esta puedes utilizar la siguiente estructura. 
 
-```css
+```
 {% for var in variant %}
    {% for stock in var.stock %}
       {{stock.officeId}}
@@ -139,6 +148,7 @@ Si por el contrario necesitas información más detalla del stock como las tiend
 {% endfor %}
 
 ```
+
 | Código | Descripción |
 | --------------------- | ------------------- |
 | `{{stock.officeId}}` | ID de la Sucursal |
@@ -150,9 +160,10 @@ Si por el contrario necesitas información más detalla del stock como las tiend
 ver [[Definir Mensaje de Stock | Mensaje Stock]]
 
 ## Imágenes:
+
 Corresponde a un grupo/arreglo de imágenes del producto.
 
-```css
+```
 {% for image in product.images %}
    {{image.id}}
    {{image.LegendImage}}
@@ -171,6 +182,7 @@ Donde:
 
 
 ## Accessories:
+
 Corresponde a un grupo/arreglo de accesorios de un producto.
 
 Se utiliza:
@@ -203,6 +215,7 @@ Se utiliza:
 ***
 
 ## Related:
+
 Corresponde al grupo/arreglo relacionados a un producto.
 
 Se utiliza:
@@ -230,7 +243,7 @@ Se utiliza:
 ## Atributos del producto
 
 funciona si el producto no tiene variantes
-```js
+```
     /*seleccion los atributos que no deseas mostrar */
     {% assign deleteAttributes = "Material,Color" | split: ',' %}
     
