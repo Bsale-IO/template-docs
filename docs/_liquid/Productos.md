@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: liquid
 title: Productos
 published: true
 ---
