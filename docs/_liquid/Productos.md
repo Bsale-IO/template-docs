@@ -161,7 +161,7 @@ ver [[Definir Mensaje de Stock | Mensaje Stock]]
 
 Corresponde a un grupo/arreglo de imágenes del producto.
 
-```
+```liquid
 {% for image in product.images %}
    {{image.id}}
    {{image.LegendImage}}
