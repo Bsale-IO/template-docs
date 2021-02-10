@@ -288,4 +288,3 @@ Estructura final del componente
 </section>
 ```
 
-{% endraw %}
