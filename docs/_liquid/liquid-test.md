@@ -65,7 +65,8 @@ site.collections
 
 list collection
 {% for collection in site.collections %}
-  -- {{collection}}
-  -- {{collection.[0]}}
+  {% assign name = collection.label %}
+
+  - {{name}}
 
 {% endfor %}
