@@ -63,6 +63,7 @@ published: true
 site.collections
 {{site.collections}}
 
+for
 {% for c in site.collections %}
     {{c.collection}}
 {% endfor %}
