@@ -65,14 +65,7 @@ site.collections
 
 list collection
 {% for collection in site.collections %}
-  {% capture label %}{{ collection | first }}{% endcapture %}
-  <h3>All documents listed in collection '{{ label}}'</h3>
-
-  {% for doc in site.collections.[label].docs %}
-    <li>
-      <span>{{ doc.date | date_to_string }}</span>
-      <a href="{{ site.url }}{{ doc.url }}">{{ doc.title }}</a>
-    </li>
-  {% endfor %}
+  -- {{collection}}
+  -- {{collection.[0]}}
 
 {% endfor %}
