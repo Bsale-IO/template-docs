@@ -64,6 +64,6 @@ site.collections
 {{site.collections}}
 
 for
-{% for c in site.collections %}
-    {{c.collection}}
+{% for collection in site.collections %}
+    {{collection[1]}}
 {% endfor %}
