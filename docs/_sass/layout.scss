@@ -86,7 +86,13 @@ h1,h2,h3,h4,h5,h6{
 .menu{
     a{
         display:block;
-        padding: .5rem 1rem ;
+        padding: .25rem 1rem ;
+        &.lv1{
+            font-size:1.25rem;
+        }
+        &.active{
+            font-weight: bold;
+        }
         &:hover{
             background: $gray-primary;
             text-decoration: none;
