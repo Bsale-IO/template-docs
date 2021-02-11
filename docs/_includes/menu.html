@@ -26,11 +26,11 @@
   {% assign name = collection.label %}
   {% assign name_url = name | replace: ' ','-' %}
   
-  <a class="btn btn-light {% if page.url contains name_url %} active {% endif %}" data-toggle="collapse" href="#{{name_url}}" role="button" aria-expanded="false" aria-controls="{{name_url}}">
+  <a class="btn btn-light d-block {% if page.url contains name_url %} active {% endif %}" data-toggle="collapse" href="#{{name_url}}" role="button" aria-expanded="false" aria-controls="{{name_url}}">
     {{name}}
   </a>
   <div class="collapse {% if page.url contains name_url %} show {% endif %}" id="{{name_url}}">
-    <div class="card card-body">
+    <div class="card card-body p-0">
       <div class="list-group list-group-flush">
         {% for pg in site.[name] %}
           <a class="list-group-item list-group-item-action {% if page.url contains pg.url %}active{%endif%}" href="{{ pg.url | relative_url }}">{{ pg.title }}</a>
