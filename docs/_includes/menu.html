@@ -33,7 +33,7 @@
     <div class="card card-body p-0">
       <div class="list-group list-group-flush">
         {% for pg in site.[name] %}
-          <a class="list-group-item list-group-item-action {% if page.url contains pg.url %}active{%endif%}" href="{{ pg.url | relative_url }}">{{ pg.title }}</a>
+          <a class="list-group-item list-group-item-action list-group-item-light {% if page.url contains pg.url %}active{%endif%}" href="{{ pg.url | relative_url }}">{{ pg.title }}</a>
         {% endfor %}
       </div>
     </div>
