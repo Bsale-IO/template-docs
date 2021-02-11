@@ -24,18 +24,20 @@
 
 {% for collection in site.collections %}
   {% assign name = collection.label %}
+  {% assign name_url = name | replace: ' ','-' %}
   
-  {% if page.url contains name %}
-    
-    {% for page in site.[name] %}
-      {% if forloop.first %}
-        <a class="lv1 active" href="{{ page.url | relative_url }}">{{ name }}</a> 
-      {% endif %}
-      <a class="lv2" href="{{ page.url | relative_url }}">{{ page.title }}</a>
-    {% endfor %}
-  {% else %}
-  <a class="lv1" href="{{collection.relative_directory | relative_url | replace: '_',''}}">{{name}}</a>
-  {% endif %}
+  <a class="btn btn-primary" data-toggle="collapse" href="#{{name_url}}" role="button" aria-expanded="false" aria-controls="{{name_url}}">
+    {{name}}
+  </a>
+  <div class="collapse" id="{{name_url}}">
+    <div class="card card-body">
+      <ul>
+        {% for pg in site.[name] %}
+           <li><a class="lv2" href="{{ pg.url | relative_url }}">{{ pg.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
 
 {% endfor %}
 
