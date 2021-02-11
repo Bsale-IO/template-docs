@@ -58,21 +58,3 @@ published: true
 
 
 {% endraw %}
-
-
-site.collections
-{{site.collections}}
-
-list collection
-{% for collection in site.collections %}
-  {% assign name = collection.label %}
-    
-
-  - {{name}}
-
-  {% for page in site.[name] %}
-    - {{ page.title }}
-    - {{ page.url }}
-  {% endfor %}
-
-{% endfor %}

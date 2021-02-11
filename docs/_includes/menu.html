@@ -11,9 +11,29 @@
         </div>
       </form>
     <!--search:end-->
+    {% comment %}
   {% for item in site.data.menus %}
     <a href="{{item.url | relative_url}}" title="{{item.title}}">
       {{item.title}}
     </a>
   {% endfor %}
+  {% endcomment %}
+
+
+
+
+{% for collection in site.collections %}
+  {% assign name = collection.label %}
+    
+
+  - {{name}}
+
+  {% if page.url contains name %}
+
+    {% for page in site.[name] %}
+      - [{{ page.title }}]({{ page.url }})
+    {% endfor %}
+  {% endif %}
+
+{% endfor %}
 </nav>
