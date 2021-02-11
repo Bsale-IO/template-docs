@@ -26,14 +26,12 @@
   {% assign name = collection.label %}
     
 
-  - {{name}}
+  <a href="">{{name}}</a>
 
   {% if page.url contains name %}
-
     {% for page in site.[name] %}
-      - [{{ page.title }}]({{ page.url }})
+      <a href="{{ page.url }}">{{ page.title }}</a>
     {% endfor %}
   {% endif %}
-
 {% endfor %}
 </nav>
