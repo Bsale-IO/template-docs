@@ -1,6 +1,6 @@
 ---
 layout: collection
-title: load json
+title: load bsale json
 published: true
 ---
 {% raw %}

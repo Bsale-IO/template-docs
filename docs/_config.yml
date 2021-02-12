@@ -24,7 +24,9 @@ collections:
     output: true
   liquid:
     output: true
-    render_with_liquid: false
+  javascript:
+    output: true
+  
 
 future: true
 
