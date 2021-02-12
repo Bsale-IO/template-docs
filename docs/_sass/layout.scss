@@ -90,10 +90,15 @@ h1,h2,h3,h4,h5,h6{
         flex-direction:column;
     }
     .lv1, .lv2{
+        padding:.25rem;
+        display:block;
         text-transform: capitalize;
         color:inherit;
         &:hover{
             color:inherit
+        }
+        &.active{
+            font-weight: 600;
         }
     }
 }
