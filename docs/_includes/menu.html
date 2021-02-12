@@ -18,7 +18,7 @@
   {% assign name = collection.label %}
   {% assign name_url = name | replace: ' ','-' %}
   
-  <a class="lv1 {% if page.url contains name_url %} active {% endif %}" data-toggle="collapse" href="#{{name_url}}" role="button" aria-expanded="false" aria-controls="{{name_url}}">
+  <a class="lv1 {% if page.url contains name_url %} collapsed {% endif %}" data-toggle="collapse" href="#{{name_url}}" role="button" aria-expanded="false" aria-controls="{{name_url}}">
     {{name}}
   </a>
   <div class="collapse {% if page.url contains name_url %} show {% endif %}" id="{{name_url}}">

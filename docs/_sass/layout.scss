@@ -85,9 +85,15 @@ h1,h2,h3,h4,h5,h6{
 
 // menu
 .menu{
+    display:flex;
+    flex-direction:column;
     .submenu{
         display:flex;
         flex-direction:column;
+        margin-bottom:1rem;
+    }
+    .lv1{
+        font-size:16px;
     }
     .lv1, .lv2{
         padding:.25rem;
