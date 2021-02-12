@@ -3,7 +3,7 @@ layout: collection
 title: Checkout Éxito
 published: true
 ---
-
+{% raw %}
 
 Corresponde a la compra completada.
 
@@ -50,7 +50,7 @@ Corresponde al detalle de la venta.
 ## Detalle de carro:
 mantiene estructura de `cart_d`.
 
-```js
+```liquid
 
 {% for item in cart %}
      {{item.quantity}}
@@ -99,7 +99,7 @@ mantiene estructura de `cart_d`.
 
 
 ### Checkout éxito
-```django
+```html
 {{ 'load checkout' | get_component }}
 <!-- v2 --->
 <div class="container">
@@ -521,7 +521,4 @@ mantiene estructura de `cart_d`.
 </div>
 ```
 
-
-
-
-
+{% endraw %}

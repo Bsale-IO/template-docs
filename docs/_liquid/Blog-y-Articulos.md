@@ -4,7 +4,7 @@ title: Blog y Artículos
 published: true
 ---
 
-
+{% raw %}
 url: /blog
 
 Corresponde al conjunto de artículos habilitados para desplegarse como blog
@@ -57,3 +57,5 @@ Para obtener un artículo especifico se emplea el filtro `get_article`de la sigu
 ```css
 {{ "título del articulo" | get_article }}
 ```
+
+{% endraw %}
