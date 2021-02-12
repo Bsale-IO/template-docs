@@ -85,9 +85,11 @@ h1,h2,h3,h4,h5,h6{
 
 // menu
 .menu{
+    align-items: flex-start;
     display:flex;
     flex-direction:column;
     .submenu{
+        align-items: flex-start;
         display:flex;
         flex-direction:column;
         margin-bottom:1rem;
@@ -97,7 +99,6 @@ h1,h2,h3,h4,h5,h6{
     }
     .lv1, .lv2{
         padding:.25rem;
-        display:block;
         text-transform: capitalize;
         color:inherit;
         &:hover{
@@ -106,5 +107,9 @@ h1,h2,h3,h4,h5,h6{
         &.active{
             font-weight: 600;
         }
+    }
+    .lv2.active{
+        background:$gray-primary;
+        border-radius:.25rem;
     }
 }
