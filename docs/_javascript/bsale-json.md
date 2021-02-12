@@ -4,9 +4,9 @@ title: bsale json
 published: true
 ---
 
-_**JSON Bsale**_ es una `variable global` que puede ser consultada desde cualquier página en los [[template 4.0.0 o superior | Template versión 4]] o superiores. En ella se guardan las configuraciones y datos de lo que está en pantalla con una estructura **JSON** que lo hace más fácil de gestionar al utilizar interacciones **Javascript**
+_**JSON Bsale**_ es una `variable global` que puede ser consultada desde cualquier página en los template 4.0.0 o superior o superiores. En ella se guardan las configuraciones y datos de lo que está en pantalla con una estructura **JSON** que lo hace más fácil de gestionar al utilizar interacciones **Javascript**
 
-Es necesario que estén cargados los componentes [[load json Bsale]].
+Es necesario que estén cargados los componentes [load Bsale Json](/componentes/load-bsale-json).
 
 **Para acceder a la variable sólo debes entrar a la `consola` del navegador y digitar:**
 ```console
