@@ -21,7 +21,7 @@ Corresponde al grupo/arreglo de artículos.
 
 Se utiliza `for` Ejemplo:
 
-```django
+```liquid
 {% for article in articles %}
      {{article.title}}
      {{article.content}}
@@ -33,14 +33,14 @@ Se utiliza `for` Ejemplo:
 
 ```
 
-| Antiguas   | Nuevas                  | Tipo |Descripción                          |
-| ---------- | ----------------------- | ------|------------------------------ |
-|`td_name`   |`{{article.title}}`      | `string`|Título del artículo                  |
-|`td_content`|`{{article.content}}`    | `html` |Contenido del artículo                  |
-|            |`{{article.created}}`| `string`|Fecha creación del artículo |
-|            |`{{article.modify_date}}`|  `string`| Fecha modificación del artículo   |
-|            |`{{article.link}}`       | `enlace`| url del artículo                     |
-|            |`{{article.imagen}}`     |  `enlace`| imagen predefinida del artículo      |
+| Nuevas                  | Tipo |Descripción                          |
+| ----------------------- | ------|------------------------------ |
+|`{{article.title}}`      | `string`|Título del artículo                  |
+|`{{article.content}}`    | `html` |Contenido del artículo                  |
+|`{{article.created}}`    | `string`|Fecha creación del artículo |
+|`{{article.modify_date}}`|  `string`| Fecha modificación del artículo   |
+|`{{article.link}}`       | `enlace`| url del artículo                     |
+|`{{article.imagen}}`     |  `enlace`| imagen predefinida del artículo      |
 
 ## Utilizar un componente blog
 
