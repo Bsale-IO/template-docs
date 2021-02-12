@@ -1,6 +1,6 @@
 ---
 layout: collection
-title: Liquid Test
+title: 1 Liquid Test
 published: true
 ---
 {% raw %}
