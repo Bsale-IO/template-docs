@@ -44,17 +44,17 @@ Se utiliza `for` Ejemplo:
 
 ## Utilizar un componente blog
 
-```css
+```liquid
 {{"nombre componente" | get_blog: "nombre componente"}}
 ```
 #### Ejemplo
-```css
+```liquid
 {{"blog_home" | get_blog: "blog_home"}}
 ```
 
 ## Obtener Artículo específico 
 Para obtener un artículo especifico se emplea el filtro `get_article`de la siguiente forma
-```css
+```liquid
 {{ "título del articulo" | get_article }}
 ```
 
