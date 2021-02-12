@@ -1,5 +1,4 @@
 <nav class="d-none d-md-block col-md-3 col-lg-2 menu">
-      <!--buscador:start-->
       <form action="{{ site.baseurl }}/search" method="get">
         <div class="input-group">
           <input type="text" id="search-box" placeholder="buscar" name="query" class="form-control">
@@ -10,23 +9,16 @@
           </div>
         </div>
       </form>
-    <!--search:end-->
-    {% comment %}
-  {% for item in site.data.menus %}
-    <a href="{{item.url | relative_url}}" title="{{item.title}}">
-      {{item.title}}
-    </a>
-  {% endfor %}
-  {% endcomment %}
 
 
 
 
+<div class="overflow-auto">
 {% for collection in site.collections %}
   {% assign name = collection.label %}
   {% assign name_url = name | replace: ' ','-' %}
   
-  <a class="btn btn-light d-block {% if page.url contains name_url %} active {% endif %}" data-toggle="collapse" href="#{{name_url}}" role="button" aria-expanded="false" aria-controls="{{name_url}}">
+  <a class="btn btn-light d-block text-left{% if page.url contains name_url %} active {% endif %}" data-toggle="collapse" href="#{{name_url}}" role="button" aria-expanded="false" aria-controls="{{name_url}}">
     {{name}}
   </a>
   <div class="collapse {% if page.url contains name_url %} show {% endif %}" id="{{name_url}}">
@@ -40,5 +32,6 @@
   </div>
 
 {% endfor %}
+</div>
 
 </nav>
