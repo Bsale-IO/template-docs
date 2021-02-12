@@ -61,6 +61,7 @@ blockquote{
 
 // titulos
 h1{
+    font-weight: lighter;
     border-bottom: 2px solid $gray-primary;
 }
 h2{
@@ -84,5 +85,15 @@ h1,h2,h3,h4,h5,h6{
 
 // menu
 .menu{
-
+    .submenu{
+        display:flex;
+        flex-direction:column;
+    }
+    .lv1, .lv2{
+        text-transform: capitalize;
+        color:inherit;
+        &:hover{
+            color:inherit
+        }
+    }
 }
