@@ -66,7 +66,7 @@ Se utiliza "for". Ejemplo:
 ```
 
 #### Respuesta sin datos
-```json
+```js
 {
    success:true,
    data: {
@@ -80,7 +80,7 @@ Se utiliza "for". Ejemplo:
 ```
 
 #### Respuesta con datos (productos en el carro)
-```json
+```js
 {
    success:true,
    data: {
