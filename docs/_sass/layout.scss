@@ -34,6 +34,13 @@ body {
 .page-menu a{
 display:block;
 }
+.menu-level-h1{  padding-left:0}
+.menu-level-h2{  padding-left:.125rem}
+.menu-level-h3{  padding-left:.25rem}
+.menu-level-h4{  padding-left:.375rem}
+.menu-level-h5{  padding-left:.5rem}
+.menu-level-h6{  padding-left:.625rem}
+
 // table
 table {
     max-width: 100%;
