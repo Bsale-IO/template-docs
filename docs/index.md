@@ -20,18 +20,29 @@ _Italica_
 ```
 
 **Negrita**
+
 _Italica_
+
 `Código`
 
 [nombre enlace](link)
 
 ### Citas
+
+```
+> cita 
+>> doble cita 
+>>> tiple cita 
+>>>> 4 cita
+```
 > cita 
 >> doble cita 
 >>> tiple cita 
 >>>> 4 cita
 
 ### Listas
+
+```
 - list
 - list
 - list
@@ -40,17 +51,55 @@ _Italica_
 2. numeral list
     - sub list
     - sub list
+        - subsub list
+        - subsub list
 3. numeral list
+    1. sub numeral
+    2. sub numeral
+        1. subsub numeral
+        2. subsub numeral
+4. numeral list
+```
+
+- list
+- list
+- list
+
+1. numeral list
+2. numeral list
+    - sub list
+    - sub list
+        - subsub list
+        - subsub list
+3. numeral list
+    1. sub numeral
+    2. sub numeral
+        1. subsub numeral
+        2. subsub numeral
 4. numeral list
 
-todo
+
+
+### todo
+```
+- [ ] single
+- [X] mark
+```
 - [ ] single
 - [X] mark
 
 ### tabla 
 
-| Aplica para               | Monto de Dinero    | Porcentaje         | Despacho gratis    |
-| ------------------------- | ------------------ | ------------------ | ------------------ |
+```
+| Aplica para               | Monto de Dinero    | Centrada           | Derecha            |
+| ------------------------- | ------------------ | :----------------: | -----------------: |
+| Todas las compras         | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| Productos Seleccionados   | :heavy_check_mark: | :heavy_check_mark: | :x:                |
+| Colecciones Seleccionadas | :heavy_check_mark: | :heavy_check_mark: | :x:                |
+```
+
+| Aplica para               | Monto de Dinero    | Centrada           | Derecha            |
+| ------------------------- | ------------------ | :----------------: | -----------------: |
 | Todas las compras         | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | Productos Seleccionados   | :heavy_check_mark: | :heavy_check_mark: | :x:                |
 | Colecciones Seleccionadas | :heavy_check_mark: | :heavy_check_mark: | :x:                |
@@ -60,7 +109,22 @@ todo
 
 
 
-## html
+## Liquid
+
+```liquid
+{% assign variable = "valor"%}
+{% for i in list %}
+{{i}}
+{% endfor %}
+
+{%if a}
+
+{% elsif b %}
+
+{% else %}
+
+{% endif %}
+```
 
 ```html
 <div class="class" id="id" title="some">  {{texto}} </div>
@@ -98,18 +162,5 @@ a{
     display:none;
 }
 ```
-
-| table | test  | 3 | 
-| ---- |:-----:| --:|
-| 3434 | 3434 | 1111|
-
-## Simple table 
-
- 1 | 2 | 3
- --: | :--: | :--
- A | B | C
-
-
-inline `code` value
 
 {% endraw %}
