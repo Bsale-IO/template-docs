@@ -113,16 +113,27 @@ _Italica_
 
 ```liquid
 {% assign variable = "valor"%}
+
+{% capture b %}
+prueba 
+{% endcapture %}
+
 {% for i in list %}
-{{i}}
+    {{i}}
 {% endfor %}
 
-{%if a}
-
+{%if a%}
+<div class="a">{{variable}}</div>
 {% elsif b %}
-
+<script>
+    var a = "{{variable}}"
+</script>
 {% else %}
-
+<style id="a">
+    .class{
+        color: {{variable}}
+    }
+</style>
 {% endif %}
 ```
 
