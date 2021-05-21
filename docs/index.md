@@ -1,30 +1,5 @@
-
-
-### site.collections
-- length: {{site.collections.length}} 
-- size :{{site.collections.size}}
-
-
-
-
-
-## Tester
-<ul> 
-    {%for  coll in site.tester %}
-        <li>
-            <a href="{{coll.url}}">
-                {{coll.title}}
-            </a>
-        </li>
-    {% endfor %}
-</ul>
-
-
-
-
 {% raw %}
 
-# h1 title
 ## h2 title
 ### h3 title
 #### h4 title
@@ -35,19 +10,28 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla diam augue, porta
 
 Aenean mauris magna, dignissim in dui et, viverra consequat nunc. Suspendisse facilisis gravida augue, non ultricies libero egestas non. Aenean a ultricies libero. Cras ante quam, volutpat ac magna id, accumsan blandit enim. Vestibulum ornare lacus sit amet purus interdum fringilla. Proin ac aliquet lorem, sed maximus justo. Nunc eu ex et augue consectetur placerat eu vitae dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac odio venenatis, luctus lacus at, scelerisque justo. Etiam et quam venenatis, viverra nulla et, auctor leo. Nunc cursus lectus lorem, nec congue nibh lobortis a. Duis tincidunt purus in orci rhoncus congue.
 
+## Fuentes
+
+```
+**Negrita**
+_Italica_
+`Código`
+[nombre enlace](link)
+```
 
 **Negrita**
 _Italica_
 `Código`
 
-[link](link)
+[nombre enlace](link)
 
-
+### Citas
 > cita 
 >> doble cita 
 >>> tiple cita 
 >>>> 4 cita
 
+### Listas
 - list
 - list
 - list
@@ -63,6 +47,7 @@ todo
 - [ ] single
 - [X] mark
 
+### tabla 
 
 | Aplica para               | Monto de Dinero    | Porcentaje         | Despacho gratis    |
 | ------------------------- | ------------------ | ------------------ | ------------------ |
