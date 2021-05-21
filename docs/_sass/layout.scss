@@ -30,7 +30,10 @@ body {
     background: $gray-primary;
     padding:1rem;
 }
-
+//page
+.page-menu a{
+display:block;
+}
 // table
 table {
     max-width: 100%;
