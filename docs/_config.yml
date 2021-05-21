@@ -26,6 +26,8 @@ collections:
     output: true
   javascript:
     output: true
+  markdown:
+    output: true
   
 
 future: true
