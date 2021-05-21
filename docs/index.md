@@ -164,6 +164,33 @@ prueba
 {% endif %}
 ```
 
+## other
+```liquid-html
+{% assign variable = "valor"%}
+
+{% capture b %}
+prueba 
+{% endcapture %}
+
+{% for i in list %}
+    {{i}}
+{% endfor %}
+
+{%if a%}
+<div class="a">{{variable}}</div>
+{% elsif b %}
+<script>
+    var a = "{{variable}}"
+</script>
+{% else %}
+<style id="a">
+    .class{
+        color: {{variable}}
+    }
+</style>
+{% endif %}
+```
+
 
 ## js
 ```js
