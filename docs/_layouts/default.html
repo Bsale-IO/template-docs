@@ -4,7 +4,10 @@
     <main class="container-fluid">
         <div class="row">
             {% include menu.html %}
-            <article class="col">{{ content }}</article>
+            <article class="col">
+                <h1>{{title}}</h1>
+                {{ content }}
+            </article>
             <nav id="page-menu" class="page-menu col-md-3"></nav>
         </div>
     </main>
