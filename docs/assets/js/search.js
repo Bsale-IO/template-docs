@@ -75,7 +75,7 @@ function getQueryVariable(variable) {
   
         for (var i = 0; i < results.length; i++) {  // Iterate over the results
           var item = store[results[i].ref];
-          appendString = `<li>
+          appendString =+ `<li>
                           <a href="${item.url}">
                             <h3>${item.title}</h3>
                           </a>
@@ -109,7 +109,6 @@ function getQueryVariable(variable) {
       // Initalize lunr with the fields it will be searching on. I've given title
       // a boost of 10 to indicate matches on this field are more important.
       var idx = lunr(function () {
-        this.field('id');
         this.field('title', { boost: 10 });
         this.field('author');
         this.field('category');
@@ -118,7 +117,6 @@ function getQueryVariable(variable) {
   
       for (var key in window.store) { // Add the data to lunr
         idx.add({
-          'id': key,
           'title': window.store[key].title,
           'author': window.store[key].author,
           'category': window.store[key].category,
