@@ -27,7 +27,7 @@
 
   </script>
 <script>
-  console.log("{% for a in components%}{{a}}{%endfor%}")
+  console.log("{% for a in site.collections%}{{a}}{%endfor%}")
 </script>
 
    <!-- buscador -->
