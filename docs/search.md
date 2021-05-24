@@ -2,18 +2,6 @@
   <ul id="search-results"></ul>
 
 
-  {% for collection in site.collections %}
-    {% assign name = collection.label %}
-    {% assign name_url = name | replace: ' ','-' %}
-    {% for pg in site.[name] %}
-      {{pg.title}}
-
-      {{pg.url}}
-
-      {{pg.content}}
-
-    {% endfor %}
-  {% endfor %}
   
   <script>
     window.store = {
@@ -26,15 +14,21 @@
           "url": "{{site.baseurl}}{{ entry.url | xml_escape }}"
         },
       {% endfor %}
-      {% for entry in site.collections %}
-        "{{ entry.url | slugify }}": {
+      {% for collection in site.collections %}
+        {% assign name = collection.label %}
+        {% assign name_url = name | replace: ' ','-' %}
+        {% for entry in site.[name] %}
+          "{{ entry.url | slugify }}": {
           "title": "{{ entry.title | xml_escape }}",
           "author": "{{ entry.author | xml_escape }}",
           "category": "{{ entry.category | xml_escape }}",
           "content": {{ entry.content | strip_html | truncatewords: 20| strip_newlines | jsonify }},
           "url": "{{site.baseurl}}{{ entry.url | xml_escape }}"
         },
-      {% endfor%}
+        {% endfor %}
+        {% endfor %}
+        
+
       {% for entry in site.posts %}
         "{{ entry.url | slugify }}": {
           "title": "{{ entry.title | xml_escape }}",
@@ -48,18 +42,8 @@
     };
     
 
-var test = {
-  {% for entry in site.collections %}
-        "{{ entry.url | slugify }}": {
-          "title": "{{ entry.label | xml_escape }}",
-          "author": "{{ entry.author | xml_escape }}",
-          "category": "{{ entry.category | xml_escape }}",
-          "content": {{ entry.content | strip_html | truncatewords: 20| strip_newlines | jsonify }},
-          "url": "{{site.baseurl}}{{ entry.url | xml_escape }}"
-        },
-      {% endfor%}
-}
-console.log(test)
+
+console.log(window.store)
   </script>
 
 
