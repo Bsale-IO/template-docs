@@ -135,6 +135,12 @@ h1,h2,h3,h4,h5,h6,
 .nav-menu{
     padding-top:1rem;
     padding-bottom:1rem;
+    a{
+        &:visited,&:hover&:active{
+            color:inherit
+        }
+        
+    }
 }
 
 @media screen and (min-width:768px){
