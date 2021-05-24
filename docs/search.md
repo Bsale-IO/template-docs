@@ -18,7 +18,7 @@
         {% assign name = collection.label %}
         {% assign name_url = name | replace: ' ','-' %}
         {% for entry in site.[name] %}
-          "{{ entry.url }}": {
+          "{{ entry.url | slugify }}": {
           "title": "{{ entry.title | xml_escape }}",
           "author": "{{ entry.author | xml_escape }}",
           "category": "{{ entry.category | xml_escape }}",
