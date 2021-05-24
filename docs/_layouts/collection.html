@@ -1,15 +1,15 @@
 {% include headtag.html %}
-<body style="background:yellow">
+<body style="background:yellowgreen">
     <main class="container-fluid">
         <div class="row">
-            <nav class="col-3 order-md-1">
+            <nav class="col-lg-2 order-md-1">
                 {% include menu.html %}
             </nav>
-            <div class="col-md-3 order-md-3 position-sticky">
+            <div class="col-lg-2 order-md-3 position-sticky">
                 <span class="h1 d-md-none">{{page.title}}</span>
                 <nav id="page-menu" class="page-menu"></nav>
             </div>
-            <article class="col-md-6 order-md-2">
+            <article class="col-lg-6 order-md-2">
                 <h1 class="d-none d-md-block">{{page.title}}</h1>
                 {{ content }} 
             </article>
