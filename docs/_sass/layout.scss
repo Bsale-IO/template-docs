@@ -132,13 +132,13 @@ h1,h2,h3,h4,h5,h6,
 
 
 
-.nav-title{
+.nav-menu{
     padding-top:1rem;
     padding-bottom:1rem;
 }
 
 @media screen and (min-width:992px){
-    .nav-title{
+    .nav-menu{
         align-self: flex-start; //si esta dentro de flex necesita esta propuesta 
         position:sticky;
         top: 0;
