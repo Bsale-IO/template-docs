@@ -71,14 +71,15 @@ blockquote{
 }
 
 // titulos
-h1{
+h1,.h1{
     font-weight: lighter;
     border-bottom: 2px solid $gray-primary;
 }
-h2{
+h2,.h2{
     border-bottom: 1px solid $gray-primary; 
 }
-h1,h2,h3,h4,h5,h6{
+h1,h2,h3,h4,h5,h6,
+.h1,.h2,.h3,.h4,.h5,.h6{
     padding:.5rem 0;
 }
 
@@ -134,9 +135,7 @@ h1,h2,h3,h4,h5,h6{
 @media screen and (min-width:992px){
     .nav-title{
         background:yellow;
-        position:fixed;
-        right:0;
-        top:0;
-        bottom:0;
+        align-self: flex-start;
+        position:sticky;
     }
 }
