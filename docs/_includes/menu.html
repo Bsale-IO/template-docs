@@ -5,11 +5,7 @@
       <img loading="lazy" src="{{'/assets/img/bsaleLogo.png' | relative_url }}" width="32" height="32" alt="Bsale">
     </picture>
   </a>
-  <div class="col-auto d-flex">
-    <button class="navbar-toggler btn btn-light" type="button" data-toggle="collapse" data-target="#menu"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      ☰
-    </button>
+  <div class="col">
     <form class="" action="{{ site.baseurl }}/search" method="get">
       <div class="input-group">
         <input type="text" id="search-box" placeholder="buscar" name="query" class="form-control">
@@ -20,6 +16,12 @@
         </div>
       </div>
     </form>
+  </div>
+  <div class="col-auto">
+    <button class="navbar-toggler btn btn-light" type="button" data-toggle="collapse" data-target="#menu"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      ☰
+    </button>
   </div>
 </div>
 
