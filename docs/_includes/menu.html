@@ -1,20 +1,23 @@
 <div class="navbar-expand-lg">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nmenu"
-    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    Menú
-  </button>
+  <div class="flex">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      Menú
+    </button>
 
 
-  <form action="{{ site.baseurl }}/search" method="get">
-    <div class="input-group">
-      <input type="text" id="search-box" placeholder="buscar" name="query" class="form-control">
-      <div class="input-group-append">
-        <button class="btn btn-outline-secondary" type="submit">
-          <i class="fas fa-search"></i>
-        </button>
+    <form action="{{ site.baseurl }}/search" method="get">
+      <div class="input-group">
+        <input type="text" id="search-box" placeholder="buscar" name="query" class="form-control">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
       </div>
-    </div>
-  </form>
+    </form>
+  </div>
+
   <div class="menu collapse navbar-collapse " id="menu">
     {% for collection in site.collections %}
     {% assign name = collection.label %}{% assign name_url = name | replace: ' ','-' %}
