@@ -12,6 +12,15 @@
           "url": "{{site.baseurl}}{{ entry.url | xml_escape }}"
         },
       {% endfor %}
+      {% for entry in site.collections %}
+        "{{ entry.url | slugify }}": {
+          "title": "{{ entry.title | xml_escape }}",
+          "author": "{{ entry.author | xml_escape }}",
+          "category": "{{ entry.category | xml_escape }}",
+          "content": {{ entry.content | strip_html | truncatewords: 20| strip_newlines | jsonify }},
+          "url": "{{site.baseurl}}{{ entry.url | xml_escape }}"
+        },
+      {% endfor}
       {% for entry in site.posts %}
         "{{ entry.url | slugify }}": {
           "title": "{{ entry.title | xml_escape }}",
@@ -26,9 +35,7 @@
     console.log(window.store)
 
   </script>
-<script>
-  console.log("{% for a in site.collections%}{{a}}{%endfor%}")
-</script>
+
 
    <!-- buscador -->
     <script defer src="{{ '/assets/js/lunr.min.js' | relative_url }}"></script>
