@@ -2,14 +2,14 @@
 <body style="background:yellowgreen">
     <main class="container-fluid">
         <div class="row">
-            <nav class="col-lg-2 order-md-1">
+            <nav class="col-lg-2 order-md-1 nav-menu">
                 {% include menu.html %}
             </nav>
-            <div class="col-lg-2 order-md-3 position-sticky">
+            <div class="col-lg-2 order-md-3 nav-title">
                 <span class="h1 d-md-none">{{page.title}}</span>
                 <nav id="page-menu" class="page-menu"></nav>
             </div>
-            <article class="col-lg-6 order-md-2">
+            <article class="col-lg-8 order-md-2">
                 <h1 class="d-none d-md-block">{{page.title}}</h1>
                 {{ content }} 
             </article>
