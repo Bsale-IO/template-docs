@@ -1,5 +1,5 @@
 ---
-layout: collection
+layout: default
 title: Productos
 published: true
 ---

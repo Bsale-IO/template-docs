@@ -1,5 +1,5 @@
 ---
-layout: collection
+layout: default
 title: Blog y Artículos
 published: true
 ---

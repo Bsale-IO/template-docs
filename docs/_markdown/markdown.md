@@ -1,5 +1,5 @@
 ---
-layout: collection
+layout: default
 title: Markdown guide
 published: true
 ---

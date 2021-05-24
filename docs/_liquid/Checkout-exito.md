@@ -1,5 +1,5 @@
 ---
-layout: collection
+layout: default
 title: Checkout Éxito
 published: true
 ---

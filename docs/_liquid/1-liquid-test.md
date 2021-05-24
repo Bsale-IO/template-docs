@@ -1,5 +1,5 @@
 ---
-layout: collection
+layout: default
 title: 1 Liquid Test
 published: true
 ---
