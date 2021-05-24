@@ -32,8 +32,20 @@
         {% unless forloop.last %},{% endunless %}
       {% endfor %}
     };
-    console.log(window.store)
+    
 
+var test = {
+  {% for entry in site.collections %}
+        "{{ entry.url | slugify }}": {
+          "title": "{{ entry.title | xml_escape }}",
+          "author": "{{ entry.author | xml_escape }}",
+          "category": "{{ entry.category | xml_escape }}",
+          "content": {{ entry.content | strip_html | truncatewords: 20| strip_newlines | jsonify }},
+          "url": "{{site.baseurl}}{{ entry.url | xml_escape }}"
+        },
+      {% endfor%}
+}
+console.log(test)
   </script>
 
 
