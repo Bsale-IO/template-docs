@@ -15,8 +15,8 @@
             "category": "{{ entry.category | xml_escape }}",
             "content": {{ entry.content | strip_html | truncatewords: 20| strip_newlines | jsonify }},
             "url": "{{site.baseurl}}{{ entry.url | xml_escape }}",
-            "position": {{forloop}}
-          }{% if forloop.last %} {%else%}, {% endif %}
+            "position": "{{forloop.index}} de {{forloop.length}}"
+          },
         {% endfor %}
       {% endfor %}    
     };
