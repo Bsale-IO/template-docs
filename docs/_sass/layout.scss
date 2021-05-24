@@ -124,3 +124,12 @@ h1,h2,h3,h4,h5,h6{
         border-radius:.25rem;
     }
 }
+
+@media screan and (min-width:768px){
+    .nav-title{
+        position:fixed;
+        right:0;
+        top:0;
+        bottom:0;
+    }
+}
