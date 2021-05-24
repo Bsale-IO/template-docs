@@ -3,12 +3,16 @@
 
 
   {% for collection in site.collections %}
-  {% assign name = collection.label %}{% assign name_url = name | replace: ' ','-' %}
-  
-  {{name}}
+    {% assign name = collection.label %}
+    {% assign name_url = name | replace: ' ','-' %}
+    {% for pg in site.[name] %}
+      {{pg.title}}
 
-  {{name_url}}
-  
+      {{pg.url}}
+
+      {{pg.content}}
+
+    {% endfor %}
   {% endfor %}
   
   <script>
