@@ -1,18 +1,16 @@
-
-  <div class="row">
-    <a class="navbar-brand col-auto col-md-12" href="{{site.baseurl}}">
-      <picture>
-          <source srcset="{{ '/assets/img/bsaleLogo.svg' | relative_url }}">
-          <img loading="lazy" src="{{'/assets/img/bsaleLogo.png' | relative_url }}" width="32" height="32" alt="Bsale">
-      </picture>
-    </a>
-    <button class="col-auto navbar-toggler btn btn-light" type="button" data-toggle="collapse" data-target="#menu"
+<div class="row">
+  <a class="navbar-brand col-auto col-md-12" href="{{site.baseurl}}">
+    <picture>
+      <source srcset="{{ '/assets/img/bsaleLogo.svg' | relative_url }}">
+      <img loading="lazy" src="{{'/assets/img/bsaleLogo.png' | relative_url }}" width="32" height="32" alt="Bsale">
+    </picture>
+  </a>
+  <div class="col-auto">
+    <button class="navbar-toggler btn btn-light" type="button" data-toggle="collapse" data-target="#menu"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       ☰
     </button>
-
-
-    <form  class="col-auto "action="{{ site.baseurl }}/search" method="get">
+    <form class="" action="{{ site.baseurl }}/search" method="get">
       <div class="input-group">
         <input type="text" id="search-box" placeholder="buscar" name="query" class="form-control">
         <div class="input-group-append">
@@ -23,22 +21,24 @@
       </div>
     </form>
   </div>
+</div>
 
-  <div class="menu collapse navbar-collapse " id="menu">
-    {% for collection in site.collections %}
-    {% assign name = collection.label %}{% assign name_url = name | replace: ' ','-' %}
-    <a class="lv1 {% if page.url contains name_url %} active {% endif %}" data-toggle="collapse" href="#{{name_url}}"
-      role="button" aria-expanded="false" aria-controls="{{name_url}}">
-      {{name}} <i class="fas fa-chevron-down"></i>
-    </a>
-    <div class="collapse {% if page.url contains name_url %} show {% endif %}" id="{{name_url}}">
-      <div class="submenu">
-        {% for pg in site.[name] %}
-        <a class="lv2 {% if page.url contains pg.url %}active{%endif%}" href="{{ pg.url | relative_url }}">{{ pg.title
-          }}</a>
-        {% endfor %}
-      </div>
+<div class="menu collapse navbar-collapse " id="menu">
+  {% for collection in site.collections %}
+  {% assign name = collection.label %}{% assign name_url = name | replace: ' ','-' %}
+  <a class="lv1 {% if page.url contains name_url %} active {% endif %}" data-toggle="collapse" href="#{{name_url}}"
+    role="button" aria-expanded="false" aria-controls="{{name_url}}">
+    {{name}} <i class="fas fa-chevron-down"></i>
+  </a>
+  <div class="collapse {% if page.url contains name_url %} show {% endif %}" id="{{name_url}}">
+    <div class="submenu">
+      {% for pg in site.[name] %}
+      <a class="lv2 {% if page.url contains pg.url %}active{%endif%}" href="{{ pg.url | relative_url }}">{{ pg.title
+        }}</a>
+      {% endfor %}
     </div>
-    {% endfor %}
   </div>
-  <!--menu-->
+  {% endfor %}
+</div>
+<!--menu-->
+</div>

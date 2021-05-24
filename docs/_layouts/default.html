@@ -1,14 +1,18 @@
 {% include headtag.html %}
 <body>
-    {% include header.html %}
     <main class="container-fluid">
         <div class="row">
-            {% include menu.html %}
-            <article class="col">
-                <h1>{{page.title}}</h1>
-                {{ content }}
+            <nav class="col-xl-2 col-md-3 order-md-1 bg-light navbar-expand-md nav-menu">
+                {% include menu.html %}
+            </nav>
+            <div class="col-xl-2 col-md-3 order-md-3 nav-menu nav-title">
+                <span class="h1 d-md-none">{{page.title}}</span>
+                <nav id="page-menu" class="page-menu"></nav>
+            </div>
+            <article class="col-xl-8  col-md-6 order-md-2">
+                <h1 class="d-none d-md-block">{{page.title}}</h1>
+                {{ content }} 
             </article>
-            <nav id="page-menu" class="page-menu col-md-3"></nav>
         </div>
     </main>
     {% include footer.html %}
