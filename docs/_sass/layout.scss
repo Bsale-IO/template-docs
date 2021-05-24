@@ -129,7 +129,10 @@ h1,h2,h3,h4,h5,h6,
 
 
 
-
+.nav-title{
+    padding-top:1rem;
+    padding-bottom:1rem;
+}
 
 @media screen and (min-width:992px){
     .nav-title{
@@ -139,7 +142,6 @@ h1,h2,h3,h4,h5,h6,
         z-index: 1020;
         height: calc(100vh);
         overflow-y: auto;
-        padding-top:1rem;
-        padding-bottom:1rem;
+        
     }
 }
