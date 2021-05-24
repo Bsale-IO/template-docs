@@ -5,40 +5,19 @@
   
   <script>
     window.store = {
-      {% for entry in site.pages %}
-        "{{ entry.url | slugify }}": {
-          "title": "{{ entry.title | xml_escape }}",
-          "author": "{{ entry.author | xml_escape }}",
-          "category": "{{ entry.category | xml_escape }}",
-          "content": {{ entry.content | strip_html | truncatewords: 20 | strip_newlines | jsonify }},
-          "url": "{{site.baseurl}}{{ entry.url | xml_escape }}"
-        },
-      {% endfor %}
       {% for collection in site.collections %}
         {% assign name = collection.label %}
         {% assign name_url = name | replace: ' ','-' %}
         {% for entry in site.[name] %}
           "{{ entry.url | slugify }}": {
-          "title": "{{ entry.title | xml_escape }}",
-          "author": "{{ entry.author | xml_escape }}",
-          "category": "{{ entry.category | xml_escape }}",
-          "content": {{ entry.content | strip_html | truncatewords: 20| strip_newlines | jsonify }},
-          "url": "{{site.baseurl}}{{ entry.url | xml_escape }}"
-        },
+            "title": "{{ entry.title | xml_escape }}",
+            "author": "{{ entry.author | xml_escape }}",
+            "category": "{{ entry.category | xml_escape }}",
+            "content": {{ entry.content | strip_html | truncatewords: 20| strip_newlines | jsonify }},
+            "url": "{{site.baseurl}}{{ entry.url | xml_escape }}"
+          }{% unless forloop.last %},{% endunless %}
         {% endfor %}
-        {% endfor %}
-        
-
-      {% for entry in site.posts %}
-        "{{ entry.url | slugify }}": {
-          "title": "{{ entry.title | xml_escape }}",
-          "author": "{{ entry.author | xml_escape }}",
-          "category": "{{ entry.category | xml_escape }}",
-          "content": {{ entry.content | strip_html | truncatewords: 20| strip_newlines | jsonify }},
-          "url": "{{site.baseurl}}{{ entry.url | xml_escape }}"
-        }
-        {% unless forloop.last %},{% endunless %}
-      {% endfor %}
+      {% endfor %}    
     };
     
 
