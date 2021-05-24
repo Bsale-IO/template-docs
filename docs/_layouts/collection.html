@@ -2,18 +2,17 @@
 <body style="background:yellow">
     <main class="container-fluid">
         <div class="row">
-            <nav class="col-3">
+            <nav class="col-3 order-md-1">
                 {% include menu.html %}
             </nav>
-            <article class="col-md-6">
-                <h1 class="d-none d-md-block">{{page.title}}</h1>
-                {{ content }} 
-            </article>
-            <div class="col-md-3 position-sticky">
+            <div class="col-md-3 order-md-3 position-sticky">
                 <span class="h1 d-md-none">{{page.title}}</span>
                 <nav id="page-menu" class="page-menu"></nav>
             </div>
-            
+            <article class="col-md-6 order-md-2">
+                <h1 class="d-none d-md-block">{{page.title}}</h1>
+                {{ content }} 
+            </article>
         </div>
     </main>
     {% include footer.html %}
