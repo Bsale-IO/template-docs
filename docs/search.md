@@ -1,5 +1,15 @@
   <h1>Resultados de busqueda</h1>
   <ul id="search-results"></ul>
+
+
+  {% for collection in site.collections %}
+  {% assign name = collection.label %}{% assign name_url = name | replace: ' ','-' %}
+  
+  {{name}}
+
+  {{name_url}}
+  
+  {% endfor %}
   
   <script>
     window.store = {
@@ -37,7 +47,7 @@
 var test = {
   {% for entry in site.collections %}
         "{{ entry.url | slugify }}": {
-          "title": "{{ entry.title | xml_escape }}",
+          "title": "{{ entry.label | xml_escape }}",
           "author": "{{ entry.author | xml_escape }}",
           "category": "{{ entry.category | xml_escape }}",
           "content": {{ entry.content | strip_html | truncatewords: 20| strip_newlines | jsonify }},
