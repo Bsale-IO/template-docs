@@ -134,10 +134,20 @@ h1,h2,h3,h4,h5,h6,
 
 @media screen and (min-width:992px){
     .nav-title{
-        background:orange;
+        background:plum;
         align-self: flex-start; //si esta dentro de flex necesita esta propuesta 
         position:sticky;
         top: 0;
         z-index: 1020;
     }
+    .scroll{
+        position:relative;
+        height:100%;
+    }
+    .page-menu{
+         overflow-y: scroll;
+        position: absolute;
+        height: 100%;
+    }
+
 }
