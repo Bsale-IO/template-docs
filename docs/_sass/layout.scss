@@ -138,8 +138,10 @@ h1,h2,h3,h4,h5,h6,
         position:sticky;
         top: 0;
         z-index: 1020;
-        height: calc(100vh - 2rem);
+        height: calc(100vh);
         overflow-y: auto;
+        padding-top:1rem;
+        padding-bottom:1rem;
     }
 
 }
