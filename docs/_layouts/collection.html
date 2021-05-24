@@ -1,5 +1,5 @@
 {% include headtag.html %}
-<body style="background:red">
+<body style="background:yellow">
     <main class="container-fluid">
         <div class="row">
             <nav class="col-3">
@@ -9,7 +9,11 @@
                 <h1 class="d-none d-md-block">{{page.title}}</h1>
                 {{ content }} 
             </article>
-            <nav id="page-menu" class="page-menu col-md-3 position-sticky"></nav>
+            <div class="col-md-3 position-sticky">
+                <span class="h1 d-md-none">{{page.title}}</span>
+                <nav id="page-menu" class="page-menu"></nav>
+            </div>
+            
         </div>
     </main>
     {% include footer.html %}
