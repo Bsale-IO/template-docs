@@ -23,6 +23,8 @@
         {% unless forloop.last %},{% endunless %}
       {% endfor %}
     };
+    console.log(window.store)
   </script>
-  <script src="js/lunr.min.js"></script>
-  <script src="js/search.js"></script>
+   <!-- buscador -->
+    <script defer src="{{ '/assets/js/lunr.min.js' | relative_url }}"></script>
+    <script defer src="{{ '/assets/js/search.js' | relative_url }}"></script>
