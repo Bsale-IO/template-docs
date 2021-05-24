@@ -142,7 +142,7 @@ h1,h2,h3,h4,h5,h6,
         
     }
 }
-%nav-menu{
+@mixin navMenu{
     align-self: flex-start; //si esta dentro de flex necesita esta propuesta 
     position:sticky;
     top: 0;
@@ -150,6 +150,6 @@ h1,h2,h3,h4,h5,h6,
     height: calc(100vh);
     overflow-y: auto;
 }
-@media screen and (min-width:768px){.nav-menu-md{@extend %nav-menu;}}
-@media screen and (min-width:992px){.nav-menu-lg{@extend %nav-menu;}}
-@media screen and (min-width:1200px){.nav-menu-xl{@extend %nav-menu;}}
+@media screen and (min-width:768px){.nav-menu-md{@extend navMenu;}}
+@media screen and (min-width:992px){.nav-menu-lg{@extend navMenu;}}
+@media screen and (min-width:1200px){.nav-menu-xl{@extend navMenu;}}
