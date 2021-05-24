@@ -15,7 +15,7 @@
             "category": "{{ entry.category | xml_escape }}",
             "content": {{ entry.content | strip_html | truncatewords: 20| strip_newlines | jsonify }},
             "url": "{{site.baseurl}}{{ entry.url | xml_escape }}"
-          }{% unless forloop.last %}, {% endunless %}
+          }{% if forloop.last %} {%else%}, {% endif %}
         {% endfor %}
       {% endfor %}    
     };
