@@ -24,7 +24,12 @@
       {% endfor %}
     };
     console.log(window.store)
+
   </script>
+<script>
+  console.log("{% for a in components%}{{a}}{%endfor%}")
+</script>
+
    <!-- buscador -->
     <script defer src="{{ '/assets/js/lunr.min.js' | relative_url }}"></script>
     <script defer src="{{ '/assets/js/search.js' | relative_url }}"></script>
