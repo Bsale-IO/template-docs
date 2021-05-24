@@ -1,12 +1,18 @@
 <div class="navbar-expand-md">
-  <div class="d-flex">
-    <button class="navbar-toggler btn btn-light" type="button" data-toggle="collapse" data-target="#menu"
+  <div class="row">
+    <a class="navbar-brand col-auto col-md-12" href="{{site.baseurl}}">
+      <picture>
+          <source srcset="{{ '/assets/img/bsaleLogo.svg' | relative_url }}">
+          <img loading="lazy" src="{{'/assets/img/bsaleLogo.png' | relative_url }}" width="32" height="32" alt="Bsale">
+      </picture>
+    </a>
+    <button class="col-auto navbar-toggler btn btn-light" type="button" data-toggle="collapse" data-target="#menu"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       ☰
     </button>
 
 
-    <form action="{{ site.baseurl }}/search" method="get">
+    <form  class="col-auto "action="{{ site.baseurl }}/search" method="get">
       <div class="input-group">
         <input type="text" id="search-box" placeholder="buscar" name="query" class="form-control">
         <div class="input-group-append">
