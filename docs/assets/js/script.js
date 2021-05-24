@@ -1,7 +1,7 @@
 (function(){
     var menu = document.querySelector("#page-menu")
     if(menu){
-        var title = document.querySelectorAll("h1,h2,h3,h4,h5,h6");
+        var title = document.querySelectorAll("h2,h3,h4,h5,h6"); //no considera h1 por ser el titulo de la pagina
         var items = "";
         for(let i=0;i<title.length; i++){
             items +=`<a class="menu-level-${title[i].localName}" href="#${title[i].id}">${title[i].innerText}</a>`;
