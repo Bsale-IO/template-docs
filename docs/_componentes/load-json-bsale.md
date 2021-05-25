@@ -1,5 +1,5 @@
 ---
-layout: collection
+layout: default
 title: load bsale json
 published: true
 ---
