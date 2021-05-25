@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Tag Manager GA4 Componente
+title: Tag Manager UA Componente
 category: Google
 published: true
 ---
@@ -8,11 +8,11 @@ published: true
 
 <div class="alert alert-warning" role="alert">
     <strong>¡Importante! ⚠</strong>
-    <p>Este componente sólo es compatible con [[Universal Analytics]] y [[Tag Manager con Universal Analytics| Tag Manager con Universal Analytics Eventos]]</p>
+    <p>Este componente sólo es compatible con <a href="../eventos/analytics-ua">Universal Analytics</a> y <a href="../eventos/tag-manager-ua-eventos">Tag Manager con Universal Analytics</a></p>
     <p>Para implementar <strong>Analytics GA4</strong> se necesita <strong>actualizar componente</strong> y tener la versión Bsale 5.5</p>
     <ul>
-        <li><a href="../eventos/Analytics-GA4-componente">Analytics GA4 Componente</a></li>
-        <li><a href="../eventos/tag-manager-ga4-componente">Tag Manager GA4 Componente</a></li>
+        <li><a href="../eventos/analytics-ga4">Analytics GA4 Componente</a></li>
+        <li><a href="../eventos/tag-manager-ga4">Tag Manager GA4 Componente</a></li>
         <li><a href="../componentes/load-json-Bsale#load-head-para-bsale-55">Componente load head</a></li>
     </ul>
 </div>

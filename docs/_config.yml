@@ -31,9 +31,6 @@ collections:
   seo:
     output: true
 
-
-  
-
 future: true
 
 # plugin
@@ -41,3 +38,8 @@ plugins:
   - jemoji
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-relative-links
+
+  relative_links:
+    enabled:     true
+    collections: true
