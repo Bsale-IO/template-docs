@@ -4,7 +4,7 @@ title: Componente Body
 published: true
 ---
 {% raw %}
-Es un componente básico que debe ir dentro de la etiqueta `<head>`, dentro de él debe poner los componentes "[[TagManager-Body | Google Tag Manager]]" y "[Schema](./seo/schema)".
+Es un componente básico que debe ir dentro de la etiqueta `<head>`, dentro de él debe poner los componentes "[Google Tag Manager](../eventos/tag-manager.html)" y "[Schema](../seo/Schema.html)".
 
 Dentro del componente **body** debes poner a los siguientes componentes
 
@@ -13,7 +13,7 @@ Dentro del componente **body** debes poner a los siguientes componentes
 {{ 'Schema' | get_component }}
 ```
 
-Donde poner el componente **body** dentro de una [[Plantilla | Plantillas]]
+Donde poner el componente **body** dentro de una [Plantilla](../plantillas/Plantilla)
 
 ```html
 <!DOCTYPE html>

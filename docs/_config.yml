@@ -22,14 +22,15 @@ sass:
 collections:
   componentes:
     output: true
+  eventos:
+    output: true
   liquid:
     output: true
   javascript:
     output: true
-  markdown:
-    output: false
   seo:
     output: true
+
 
   
 
