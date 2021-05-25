@@ -1,4 +1,4 @@
-  <h1>Resultados de busqueda</h1>
+  <h1>Resultados de Búsqueda</h1>
   <ul id="search-results"></ul>
   <script>
     window.store = {
