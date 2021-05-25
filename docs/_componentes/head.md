@@ -3,7 +3,7 @@ layout: default
 title: head
 published: true
 ---
-
+{% raw %}
 Es un componente básico que debe ir dentro de la etiqueta `<head>`
 
 Dentro del componente **head** debes llamar a los siguientes componentes
@@ -30,3 +30,4 @@ Donde poner el componente **head** dentro de una [[Plantilla | Plantillas]]
    </body>
 </html>
 ```
+{% endraw %}

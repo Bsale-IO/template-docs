@@ -11,8 +11,8 @@ published: true
     <p>Este componente sólo es compatible con <a href="../eventos/analytics-ua">Universal Analytics</a> y <a href="../eventos/tag-manager-ua-eventos">Tag Manager con Universal Analytics</a></p>
     <p>Para implementar <strong>Analytics GA4</strong> se necesita <strong>actualizar componente</strong> y tener la versión Bsale 5.5</p>
     <ul>
-        <li><a href="../eventos/analytics-ga4">Analytics GA4 Componente</a></li>
-        <li><a href="../eventos/tag-manager-ga4">Tag Manager GA4 Componente</a></li>
+        <li><a href="../componentes/analytics-ga4">Analytics GA4 Componente</a></li>
+        <li><a href="../componentes/tag-manager-ga4">Tag Manager GA4 Componente</a></li>
         <li><a href="../componentes/load-json-Bsale#load-head-para-bsale-55">Componente load head</a></li>
     </ul>
 </div>

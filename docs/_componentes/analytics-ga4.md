@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Analytics GA4 Componente
+title: Analytics GA4
 category: Google
 published: true
 ---
