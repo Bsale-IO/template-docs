@@ -21,7 +21,7 @@ Para revisar como se verá tu sitio compartido en redes sociales puedes testearl
 
 - Este componente debe ponerlo dentro del [[Componente Head]], 
 
-```django
+```html
 <script>console.log('%cBsale:','padding:3px;color:#fff;background-color:#ff6815', '{{site.cpnId}} | {{site.name}}');</script>
 
 <meta name="theme-color" content="#c4c4c4"><!-- color de barra de chrome, por defecto gris-->
