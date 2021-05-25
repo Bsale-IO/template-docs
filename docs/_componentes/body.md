@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Componente Body
+title: body
 published: true
 ---
 {% raw %}
