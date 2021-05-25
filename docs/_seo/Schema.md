@@ -3,11 +3,11 @@ layout: default
 title: Schema
 published: true
 ---
-
+{% raw %}
 Este componente permite que google pueda gestionar la información de tu sitio web, debe ir dentro del [[Componente Body]] 
 
 ## Versión Febrero 2021
-```django
+```liquid
 <script>
     {{variant | json_encode}}
 </script>
@@ -240,3 +240,4 @@ Este componente permite que google pueda gestionar la información de tu sitio w
     }
 </script>
 ```
+{% endraw %}

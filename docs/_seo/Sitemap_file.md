@@ -3,7 +3,7 @@ layout: default
 title: Sitemap
 published: true
 ---
-
+{% raw %}
 El sitemap en bsale se genera de forma automática, para acceder a el sólo tienes que ir a 
 ```
 /sitemap.xml
@@ -19,3 +19,4 @@ tienda.com
 tienda.com/sitemap.xml
 ```
 
+{% endraw %}
