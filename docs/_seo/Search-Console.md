@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Search Console
-tag: ["Google"]
+category: Google
 published: true
 ---
 
