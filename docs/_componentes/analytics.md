@@ -1,16 +1,19 @@
 ---
 layout: default
-title: Analytics GA4
+title: Analytics
 category: Google
 published: true
 ---
 {% raw %}
+
+## Componente Nuevo
+
 <div class="alert alert-warning">
     <strong>¡Importante! ⚠</strong>
     <p>Antes de actualizar este componente es necesario que actualices el componente <a href="../componentes/load-json-bsale#load-head-para-bsale-55">load head para Bsale 5.5</a></p>
 </div>
 
-## Componente `analytics`
+### Componente `analytics`
 
 - Crea un componente con el nombre `analytics`
 - Copiar y Pega este código dentro del componente `analytics`
@@ -32,5 +35,8 @@ Inserta este componente del del [componente head](../componentes/head)
 ```liquid
 {{ "analytics" | get_component }}
 ```
+## Componente Antiguo
+
+Anteriormente este componente formaba parte de [Componente tag manager](../componentes/tag-manager)
 
 {% endraw%}
