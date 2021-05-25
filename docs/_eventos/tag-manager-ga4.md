@@ -7,17 +7,17 @@ published: true
 {% raw %}
 
 <div class="alert alert-warning" role="alert">
-**¡Importante! ⚠**
-<p>Este componente sólo es compatible con [[Universal Analytics]] y [[Tag Manager con Universal Analytics| Tag Manager con Universal Analytics Eventos]]</p>
-<p>Para implementar _**`Analytics GA4`**_ se necesita _**actualizar componente**_ y tener la versión Bsale 5.5</p>
-
-- [ Analytics GA4 Componente](../eventos/Analytics-GA4-componente)
-- [ Tag Manager Componente ](../eventos/tag-manager-ga4-componente)
-- [ Componente load head ](../componentes/load-json-Bsale#load-head-para-bsale-55)
-
+    <strong>¡Importante! ⚠</strong>
+    <p>Este componente sólo es compatible con [[Universal Analytics]] y [[Tag Manager con Universal Analytics| Tag Manager con Universal Analytics Eventos]]</p>
+    <p>Para implementar <strong>Analytics GA4</strong> se necesita <strong>actualizar componente</strong> y tener la versión Bsale 5.5</p>
+    <ul>
+        <li><a href="../eventos/Analytics-GA4-componente">Analytics GA4 Componente</a></li>
+        <li><a href="../eventos/tag-manager-ga4-componente">Tag Manager GA4 Componente</a></li>
+        <li><a href="../componentes/load-json-Bsale#load-head-para-bsale-55">Componente load head</a></li>
+    </ul>
 </div>
 
-## Componentes Tag Manager
+## Componentes
 
 Se deben crear 2 componentes, uno que se pega dentro de [[Componente HEAD]] y el otro dentro de [[Componente BODY]]
 
