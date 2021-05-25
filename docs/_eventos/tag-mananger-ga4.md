@@ -50,4 +50,4 @@ Revisa que el componente esté siendo llamado dentro de [[componente body]]
 ```liquid
 {{ "tagmanager_body" | get_component }}
 ```
-{% endraw }
+{% endraw %}
