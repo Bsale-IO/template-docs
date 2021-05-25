@@ -36,7 +36,7 @@
   <div class="collapse {% if page.url contains name_url %} show {% endif %}" id="{{name_url}}">
     <div class="submenu">
       {% for pg in site.[name] %}
-      <a class="lv2 {% if page.url contains pg.url %}active{%endif%}" href="{{ pg.url | relative_url }}">{{ pg.title
+      <a class="lv2 {% if page.url contains pg.url %}active{%endif%}" href="{{ pg.url | relative_url | replace: ".html",""}}">{{ pg.title
         }}</a>
       {% endfor %}
     </div>
