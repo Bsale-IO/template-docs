@@ -27,7 +27,7 @@ published: true
 {% endif %}
 ```
 ### Instalación 
-Revisa que el componente esté siendo llamado dentro de [[componente head]]
+Revisa que el componente esté siendo llamado dentro de [componente head](../componentes/head)
 
 ```liquid
 {{ "tagmanager_head" | get_component }}
@@ -45,7 +45,7 @@ Revisa que el componente esté siendo llamado dentro de [[componente head]]
 {%endif%}
 ```
 ### Instalación 
-Revisa que el componente esté siendo llamado dentro de [[componente body]]
+Revisa que el componente esté siendo llamado dentro de [componente body](../componentes/body)
 
 ```liquid
 {{ "tagmanager_body" | get_component }}

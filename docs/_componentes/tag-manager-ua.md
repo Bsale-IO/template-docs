@@ -19,7 +19,7 @@ published: true
 
 ## Componentes
 
-Se deben crear 2 componentes, uno que se pega dentro de [[Componente HEAD]] y el otro dentro de [[Componente BODY]]
+Se deben crear 2 componentes, uno que se pega dentro de [Componente head](../componentes/head) y el otro dentro de [Componente body](../componentes/body)
 
 ### componente `tagmanager_head`
 
@@ -56,13 +56,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 ## Implementación
 
-1. Dentro del componente [[Componente HEAD]] pega el siguiente código 
+1. Dentro del componente [Componente head](../componentes/head) pega el siguiente código 
 
 ```liquid
 {{ 'tagmanager_head' | get_component }}
 ```
 
-2. Dentro del componente [[Componente BODY]] pega el siguiente código
+2. Dentro del componente [Componente body](../componentes/body) pega el siguiente código
 
 ```liquid
 {{ 'tagmanager_body' | get_component }}
