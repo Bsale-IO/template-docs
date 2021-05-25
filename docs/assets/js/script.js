@@ -6,7 +6,10 @@
         for(let i=0;i<title.length; i++){
             items +=`<a class="menu-level-${title[i].localName}" href="#${title[i].id}">${title[i].innerText}</a>`;
         }
-        menu.innerHTML = items
+        if(title.lenght){
+            menu.innerHTML = items
+        }
+        
     }
 
 

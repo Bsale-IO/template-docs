@@ -10,7 +10,7 @@
             </nav>
             <!--menu title-->
             <div class="col-md-3 col-lg-3 col-xl-3 order-md-3 nav-menu-md nav-title">
-                <span class="h1 d-md-none">{{page.title}}</span>
+                {% if page.title %}<span class="h1 d-md-none">{{page.title}}</span>{% endif %}
                 <nav id="page-menu" class="page-menu"></nav>
             </div>
             <!-- content -->
@@ -31,7 +31,9 @@
                     </ol>
                 </nav>
                 <article class="content">
-                <h1 class="d-none d-md-block">{{page.title}}</h1>
+                    {% if page.title %}
+                        <h1 class="d-none d-md-block">{{page.title}}</h1>
+                    {% endif %}
                 {{ content }}
                 </article>
             </section>
