@@ -33,6 +33,10 @@ collections:
 
 future: true
 
+relative_links:
+  enabled:     true
+  collections: true
+  
 # plugin
 plugins:
   - jemoji
@@ -40,6 +44,3 @@ plugins:
   - jekyll-seo-tag
   - jekyll-relative-links
 
-  relative_links:
-    enabled:     true
-    collections: true
