@@ -43,9 +43,11 @@ color:rgb(108, 117, 125)
 
 // table
 table {
-    max-width: 100%;
     margin-bottom: 1rem;
     background-color: transparent;
+    width: max-content;
+    max-width: 100%;
+    overflow: auto;
     th, td {
         padding: .5rem 0.75rem;
         vertical-align: top;
