@@ -3,21 +3,7 @@
 <body>
     <main class="container-fluid">
         <div class="row">
-            <nav aria-label="breadcrumb" class="col-12">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item">
-                        <a href="/">Home</a>
-                    </li>
-                    {% if page.collection %}
-                        <li class="breadcrumb-item" aria-current="page">
-                            <a href="/{{page.collection}}">{{page.collection}}</a>
-                        </li>
-                    {% endif %}
-                    <li class="breadcrumb-item active" aria-current="page">
-                        {{page.title}}
-                    </li>
-                </ol>
-            </nav>
+            
             <!-- menu site -->
             <nav class="col-md-12 col-lg-3 col-xl-2 order-md-1 bg-light navbar-expand-lg nav-menu-lg">
                 {% include menu.html %}
@@ -30,6 +16,21 @@
             </div>
             <!-- content -->
             <article class="col-md-9 col-lg-6 col-xl-8  order-md-2">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a href="{{site.baseurl}}">Home</a>
+                        </li>
+                        {% if page.collection %}
+                            <li class="breadcrumb-item" aria-current="page">
+                                <a href="{{site.baseurl}}/{{page.collection}}">{{page.collection}}</a>
+                            </li>
+                        {% endif %}
+                        <li class="breadcrumb-item active" aria-current="page">
+                            {{page.title}}
+                        </li>
+                    </ol>
+                </nav>
                 <h1 class="d-none d-md-block">{{page.title}}</h1>
                 {{ content }}
             </article>
