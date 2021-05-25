@@ -1,5 +1,5 @@
   <h1>Resultados de Búsqueda</h1>
-  <ul id="search-results"></ul>
+  <div id="search-results" class="list-group list-group-flush"></div>
   <script>
     window.store = {
       {% for collection in site.collections %}
