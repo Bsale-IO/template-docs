@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Google Search Console
+title: Search Console
+tag: ["Google"]
 published: true
 ---
 
