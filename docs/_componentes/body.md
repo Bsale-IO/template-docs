@@ -3,6 +3,7 @@ layout: default
 title: Componente Body
 published: true
 ---
+{% raw %}
 Es un componente básico que debe ir dentro de la etiqueta `<head>`, dentro de él debe poner los componentes "[[TagManager-Body | Google Tag Manager]]" y "[Schema](./seo/schema)".
 
 Dentro del componente **body** debes poner a los siguientes componentes
@@ -26,3 +27,4 @@ Donde poner el componente **body** dentro de una [[Plantilla | Plantillas]]
    </body>
 </html>
 ```
+{% endraw %}
