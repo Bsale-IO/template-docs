@@ -32,7 +32,9 @@ body {
 //page
 .page-menu a{
 display:block;
-color:rgb(108, 117, 125)
+color:rgb(108, 117, 125);
+padding-top: .25rem;
+padding-bottom: .25rem
 }
 .menu-level-h1{  padding-left:0; font-weight: bold;}
 .menu-level-h2{  padding-left:0rem}
@@ -132,19 +134,17 @@ h1,h2,h3,h4,h5,h6,
 }
 
 
-img{
-    max-width:100%;
-    height:auto;
-    border: 1px solid $gray-primary;
-    border-radius:.25rem;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
-}
-.navbar-brand img{
-box-shadow:none;
-border-radius:0px;
-border: 0 none;
-}
 
+
+.content {
+    img{
+        max-width:100%;
+        height:auto;
+        border: 1px solid $gray-primary;
+        border-radius:.25rem;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    }
+}
 
 @mixin navMenu{
     align-self: flex-start; //si esta dentro de flex necesita esta propuesta 
