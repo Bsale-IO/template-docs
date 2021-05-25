@@ -7,7 +7,7 @@ published: true
 
 - En el están todas las descripciones necesarias para que tu sitio sea encontrado por **google** y compartido en **redes sociales**.
 
-### Revisar Metadatos
+## Revisar Metadatos
 Para revisar como se verá tu sitio compartido en redes sociales puedes testearlo acá:
 - [facebook y whatsapp](https://developers.facebook.com/tools/debug/)
 - [twitter card](https://cards-dev.twitter.com/validator)
