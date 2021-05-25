@@ -7,7 +7,7 @@
         {% assign name_url = name | replace: ' ','-' %}
         {% for entry in site.[name] %}
           "{{ entry.url | slugify }}": {
-            "tags": "{{ entry.tags| xml_escape }}",
+            "tags": {{ entry.tags}},
             "title": "{{ entry.title | xml_escape }}",
             "author": "{{ entry.author | xml_escape }}",
             "category": "{{ entry.category | xml_escape }}",

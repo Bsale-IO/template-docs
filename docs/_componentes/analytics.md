@@ -2,7 +2,7 @@
 layout: default
 title: Analytics
 category: Google
-tags: "Google" "Eventos" "tracking"
+tags: Google Eventos tracking
 published: true
 ---
 {% raw %}
