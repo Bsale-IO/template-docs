@@ -11,14 +11,8 @@ published: true
 
 _**Search Console**_ es una plataforma que te permite potenciar el SEO de tu sitio, pudiendo entrar a google tu sitemap e indicar que páginas indexar o no en el buscador
 
-### Menú
-- [Crear una Cuenta](Search-Console#crear-una-cuenta)
-- Validar
-  - [Etiqueta HTML](Search-Console#etiqueta-html)
-  - [Google Analytics](Search-Console#google-analytics)
-- [Cargar Sitemap](Search-Console#cargar-sitemap)
 
-### Crear una Cuenta
+## Crear una Cuenta
 
 1. Para crear una cuenta en search console necesitas una cuenta de gmail
 2. Al crear una cuenta te recomendamos hacerlo por **_`Prefijo de la URL`_**
@@ -27,8 +21,8 @@ _**Search Console**_ es una plataforma que te permite potenciar el SEO de tu sit
 
 3. Luego se te pedirá verificar la propiedad del sitio, para ellos te recomendamos 2 de métodos
 
-### Validación 
-#### _Etiqueta HTML_
+## Validación 
+### _Etiqueta HTML_
 
  ![](https://raw.githubusercontent.com/Bsale-IO/template-docs/master/docs/assets/img/search_console/search_console_02_etiquetaHTML.png)
 
@@ -39,7 +33,7 @@ _**Search Console**_ es una plataforma que te permite potenciar el SEO de tu sit
 ```
 - Pégalo en el componente [metadata > certification](https://github.com/Bsale-IO/template-docs/wiki/Metadata#componente-metadata--certification)
 
-#### _Google Analytics_
+### _Google Analytics_
 
 > ![](https://raw.githubusercontent.com/Bsale-IO/template-docs/master/docs/assets/img/search_console/search_console_02_analytics.png)
 
