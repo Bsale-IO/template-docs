@@ -27,7 +27,10 @@ collections:
   javascript:
     output: true
   markdown:
+    output: false
+  seo:
     output: true
+
   
 
 future: true
