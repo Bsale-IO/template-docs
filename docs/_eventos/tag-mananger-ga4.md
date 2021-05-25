@@ -7,7 +7,7 @@ published: true
 {% raw %}
 <div class="alert alert-warning">
     <strong>¡Importante! ⚠</strong>
-    <p>Antes de actualizar este componente es necesario que actualices el componente <a href="../componentes/load-json-Bsale#load-head-para-bsale-55">load head para Bsale 5.5</a>(load-json-Bsale#load-head-para-bsale-55)</p>
+    <p>Antes de actualizar este componente es necesario que actualices el componente <a href="../componentes/load-json-Bsale#load-head-para-bsale-55">load head para Bsale 5.5</a></p>
 </div>
 
 ## 1. Componente `tagmanager_head`
