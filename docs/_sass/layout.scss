@@ -14,9 +14,11 @@ body {
     }
 }
 a{
-    color:$action-link;
-    &:hover, &:active, &:visited{
-        color:$action-link-hover
+    &, &:visited{
+        color:$action-primary;
+    }
+    &:hover, &:active{
+        color:$action-primary-hover
     }
 }
 
