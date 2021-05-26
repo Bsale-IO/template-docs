@@ -32,9 +32,9 @@ body {
 //page
 .page-menu{
     color: $silver;
-     a{
+    a, a:hover,a:visited,:active{
+    color:inherit;
     display:block;
-
     padding-top: .25rem;
     padding-bottom: .25rem
     }
