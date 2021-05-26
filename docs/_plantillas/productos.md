@@ -164,6 +164,7 @@ Para imprimir las variantes dentro de la página producto debo usar en arreglo {
    {% endfor %}
 {% endfor %}
 ```
+
 | Código | Descripción |
 | --------------------- | ------------------- |
 | `{{stock.officeId}}` | ID de la Sucursal |
@@ -184,6 +185,7 @@ Corresponde a un grupo/arreglo de imágenes del producto.
    {{image.state}}
 {%endfor%}
 ```
+
 | Codigo | Descripción |
 | -------------- | ----------- |
 | `{{image.id}}` | Corresponde al ID de la imagen.|
@@ -221,7 +223,7 @@ Corresponde a un grupo/arreglo de accesorios de un producto.
 
 Corresponde al grupo/arreglo relacionados a un producto.
 
-```
+```liquid
 {% for product in related%}
 	{{product.title}}
 	{{product.id}}
@@ -244,7 +246,8 @@ Corresponde al grupo/arreglo relacionados a un producto.
 
 ## Atributos del producto
 
-funciona si el producto no tiene variantes
+Funciona si el producto no tiene variantes
+
 ```liquid
     <!--seleccion los atributos que no deseas mostrar -->
     {% assign deleteAttributes = "Material,Color" | split: ',' %}
@@ -274,7 +277,7 @@ Para acceder al JSON de Bsale desde una página de producto
 1. Abre la consola de tu navegador 
 2. Escribe:
 
-```
+```js
 Bsale.products[0]
 ```
 
