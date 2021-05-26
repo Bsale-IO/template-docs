@@ -30,14 +30,17 @@ body {
     padding:1rem;
 }
 //page
-.page-menu a{
-display:block;
-color: $silver;
-padding-top: .25rem;
-padding-bottom: .25rem
+.page-menu{
+    color: $silver;
+     a{
+    display:block;
+
+    padding-top: .25rem;
+    padding-bottom: .25rem
+    }
 }
-.menu-level-h1{  padding-left:0; font-weight: bold;}
-.menu-level-h2{  padding-left:0rem}
+.menu-level-h1{  padding-left:0;}
+.menu-level-h2{  padding-left:0;}
 .menu-level-h3{  padding-left:1rem}
 .menu-level-h4{  padding-left:2rem}
 .menu-level-h5{  padding-left:3rem}
