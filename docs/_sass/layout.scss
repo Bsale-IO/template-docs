@@ -13,6 +13,12 @@ body {
         flex: 1 0 auto;
     }
 }
+a{
+    color:$action-link;
+    &:hover, &:active, &:visited{
+        color:$action-link-hover
+    }
+}
 
 
 
