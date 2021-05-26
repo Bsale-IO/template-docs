@@ -106,6 +106,15 @@ h1,h2,h3,h4,h5,h6,
         }
     }
 }
+//buttons
+.btn-primary{
+    background:$action-primary;
+    border-color: $action-primary;
+    &:hover, &:focus, &.active{
+        background:$action-primary-hover;
+        border-color: $action-primary-hover;
+    }
+}
 
 //breadcrumb
 .breadcrumb{
