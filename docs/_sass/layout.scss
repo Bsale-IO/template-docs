@@ -90,6 +90,7 @@ h1,h2,h3,h4,h5,h6,
     align-items:center;
     padding:.5rem 0;
     color:$primary;
+    text-transform: capitalize;
     .text-muted{
         color: $silver;
         opacity:0.4;
@@ -130,12 +131,13 @@ h1,h2,h3,h4,h5,h6,
     }
     .lv1{
         font-size:16px;
+        padding:.25rem;
     }
     .lv2{
+        padding:.25rem;
         padding-left: 1.4rem;
     }
-    .lv1, .lv2{
-        padding:.25rem;
+    .lv1, .lv2{ 
         text-transform: capitalize;
         color:inherit;
         width:100%;
