@@ -2,6 +2,7 @@
 layout: default
 title: Productos
 published: true
+category: liquid
 ---
 {% raw %}
 
@@ -110,7 +111,7 @@ Un producto puede tener más de una sola descripción general como por ejemplo l
 Los Productos se pueden separar en variantes por ejemplo un vendo unos zapatos y tengo un zapata rojo y otro azul cada uno de ellos es una variante. 
 Para imprimir las variantes dentro de la página producto debo usar en arreglo {%for%}
 
-``liquid
+```liquid
 {% for var in variant %}
    {{var.title}}
    {{var.price}}
@@ -129,6 +130,7 @@ Para imprimir las variantes dentro de la página producto debo usar en arreglo {
    {{var.shipping.lenght}}
    {{var.shipping.deph}}
 {% endfor %}
+```
 
 | Código | Descripción |
 | ------ | ----------- |
