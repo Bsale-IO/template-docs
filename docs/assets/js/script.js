@@ -5,7 +5,7 @@
         var items = "<strong>Menú Página</strong>";
         for(let i=0;i<title.length; i++){
             items +=`<a class="menu-level-${title[i].localName}" href="#${title[i].id}">${title[i].innerText}</a>`;
-            title[i].innerHTML = `${title[i].innerHTML} <small class="text-muted"><a href="#${title[i].id}"><i class="fas fa-link"></i></a></small>`
+            title[i].innerHTML = `${title[i].innerHTML} <a class="text-muted" href="#${title[i].id}"><i class="fas fa-link"></i></a>`
         }
         menu.innerHTML = title.length > 0 ? items : "";   
     }
