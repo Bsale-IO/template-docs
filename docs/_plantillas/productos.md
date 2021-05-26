@@ -267,4 +267,15 @@ funciona si el producto no tiene variantes
     {% endfor %}
 ```
 
+## Bsale JSON
+
+Para acceder al JSON de Bsale desde una página de producto 
+
+1. Abre la consola de tu navegador 
+2. Escribe:
+
+```
+Bsale.products[0]
+```
+
 {% endraw %}
