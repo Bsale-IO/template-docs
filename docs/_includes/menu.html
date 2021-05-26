@@ -29,7 +29,7 @@
 <div class="menu collapse navbar-collapse " id="menu">
   {% for collection in site.collections %}
   {% assign name = collection.label %}{% assign name_url = name | replace: ' ','-' %}
-    {% if collection.lenght %}
+    {% if collection.length %}
       <a class="lv1 {% if page.url contains name_url %} active {%else%} collapsed {% endif %}" data-toggle="collapse" href="#{{name_url}}"
         role="button" aria-expanded="false" aria-controls="{{name_url}}">
         <i class="fas fa-chevron-down"></i> <span>{{name}}</span> 
