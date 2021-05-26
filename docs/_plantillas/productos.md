@@ -38,11 +38,14 @@ Para acceder a la plantilla de un producto es necesario acceder a la url
    </body>
 </html>
 ```
-## Variables 
+## Variables
+
+Los componentes que se carguen dentro de esta plantilla pueden acceder a las siguientes variables  
 
 ### Información del producto 
+
 | Código | Descripción |
-| --------------------- | ------------------- |
+| ------ | ----------- |
 | `{{ product.title }}` | Nombre del Producto |
 | `{{ product.collections }}`| `array` Colecciones a la que pertenece el producto |
 | `{{ product.description }}` | Descripción principal del producto |
@@ -58,13 +61,15 @@ Para acceder a la plantilla de un producto es necesario acceder a la url
 | `{{ product.classification }}` | tipo de producto ( `0` = producto, `1` = servicio, `3` = pack) |
 
 ### Descuento
+
 | Código | Descripción |
-| --------------------- | ------------------- |
+| ------ | -------------- |
 | `{{product.discountRate}}` | Porcentaje de **Descuento** |
 | `{{product.discountName}}` | Nombre del **Descuento** |
 | `{{product.discountCant}}` | Número de unidades sobre las que se aplica el descuento **Descuento** ej: desde 2 productos |
 
 ### Precio
+
 | Código | Descripción |
 | --------------------- | ------------------- |
 | `{{ product.priceList }}` | ID de la lista de precio |
@@ -72,14 +77,15 @@ Para acceder a la plantilla de un producto es necesario acceder a la url
 | `{{product.final_price}}` | Precio final del producto aplicando descuentos |
 
 ### Marca
+
 | Código | Descripción |
-| --------------------- | ------------------- |
+| ------ | ----------- |
 | `{{ product.brand.name }}` | Nombre de la marca |
 | `{{product.brand.logoImg}}` | Logo de la marca |
-| `{{product.brand.link}}` | url `misitio.com/brand/[nombre marca]` |
+| `{{product.brand.link}}` | url de la colección de la marca |
 
 ### Otras Descripciones:
-Un producto puede tener más de una sola descripción general como por ejemplo la ficha técnica para traer esta información a pantalla es necesario realizar un arreglo ``{%for%}`` 
+Un producto puede tener más de una sola descripción general como por ejemplo la ficha técnica para traer esta información a pantalla es necesario realizar un arreglo `{% for %}` 
 
 ```liquid
 {% for descripcion in product.descriptions%}
@@ -89,9 +95,10 @@ Un producto puede tener más de una sola descripción general como por ejemplo l
      {{descripcion.order}}
      {{descripcion.default}}
 {% endfor%}
+```
 
 | Código | Descripción |
-| --------------------- | ------------------- |
+| ------ | ----------- |
 | `{{descripcion.descriptionName}}` | Es el nombre de la descripción|
 | `{{descripcion.id}}` | Corresponde al id de la descripción|
 | `{{descripcion.html}}` | Es el contenido de la descripción|
@@ -124,7 +131,7 @@ Para imprimir las variantes dentro de la página producto debo usar en arreglo {
 {% endfor %}
 
 | Código | Descripción |
-| --------------------- | ------------------- |
+| ------ | ----------- |
 |`{{var.title}}` | Nombre de la variante |
 | `{{var.price}}` | `número` Precio de la variante |
 |  `{{var.id}}` | `número` id de la variante |
@@ -164,9 +171,10 @@ Para imprimir las variantes dentro de la página producto debo usar en arreglo {
 | `{{stock.quantityAvailable}}` | Stock habiliados |
 
 ### Imágenes:
+
 Corresponde a un grupo/arreglo de imágenes del producto.
 
-```css
+```liquid
 {% for image in product.images %}
    {{image.id}}
    {{image.LegendImage}}
@@ -183,6 +191,7 @@ Corresponde a un grupo/arreglo de imágenes del producto.
 
 
 ## Accessories:
+
 Corresponde a un grupo/arreglo de accesorios de un producto.
 
 ```liquid
@@ -207,6 +216,7 @@ Corresponde a un grupo/arreglo de accesorios de un producto.
 ```
 
 ## Productos Relacionados:
+
 Corresponde al grupo/arreglo relacionados a un producto.
 
 ```
