@@ -34,7 +34,7 @@
         role="button" aria-expanded="false" aria-controls="{{name_url}}">
         <i class="fas fa-chevron-down"></i> <span>{{name}}</span> 
       </a>
-      <div class="collapse {% if page.url contains name_url %} show {% endif %}" id="{{name_url}}">
+      <div class="collapse w-100 {% if page.url contains name_url %} show {% endif %}" id="{{name_url}}">
         <div class="submenu">
           {% for pg in site.[name] %}
           <a class="lv2 {% if page.url contains pg.url %}active{%endif%}" href="{{ pg.url | relative_url | replace: ".html",""}}">{{ pg.title
