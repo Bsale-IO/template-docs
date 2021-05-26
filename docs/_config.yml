@@ -30,6 +30,8 @@ collections:
     output: true
   seo:
     output: true
+  plantillas:
+    output: true
 
 future: true
 
