@@ -1,8 +1,8 @@
 ---
+layout: default
 title: Resultados de Búsqueda
 ---
 
-  <h1>{{page.title}}</h1>
   <div id="search-results" class="list-group list-group-flush"></div>
   <script>
     window.store = {
