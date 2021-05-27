@@ -1,5 +1,33 @@
 @import "variables";
 
+$a: #6c8b9f;
+$b: #4e5d62;
+$c: #38C46D;
+$d: #4dc5c0;
+$e: #dee5e7;
+$f: #122B3B;
+$g: #14364c;
+$h: #fefeec;
+$j: #cc0000;
+$k: #c4a000;
+$l: #B2FD6D;
+$m: #A8E1FE;
+$n :#faf6e4;
+$o: #F6DD62;
+$p: #F696DB;
+$r: #FFF0A6;
+$s:#4DF4FF;
+$t: #ffb000;
+$u: #ffcfdb;
+$v: #000000;
+$w: #c0c000;
+
+
+
+
+
+
+
 .highlight pre { color:white;}
 .highlight .hll { background-color: #272822; }
 .highlight .c { color: #75715e } /* Comment */
@@ -79,7 +107,9 @@
     }
     .rouge-gutter{
         text-align:right;
-        opacity:0.75;
+        .lineno{
+            opacity:0.75;
+        }
     }
     .rouge-code{
         width:100%;
