@@ -36,9 +36,9 @@
 .highlight .nn { color: #f8f8f2 } /* Name.Namespace */
 .highlight .nx { color: #a6e22e } /* Name.Other */
 .highlight .py { color: #f8f8f2 } /* Name.Property */
-.highlight .nt { color: #f92672 } /* Name.Tag */
+.highlight .nt { color: #f92672 } /* Name.Tag html */
 .highlight .nv { color: #f8f8f2 } /* Name.Variable */
-.highlight .ow { color: #f92672 } /* Operator.Word */
+.highlight .ow { color: #f92672 } /* Operator.Word */ 
 .highlight .w { color: #f8f8f2 } /* Text.Whitespace */
 .highlight .mf { color: #ae81ff } /* Literal.Number.Float */
 .highlight .mh { color: #ae81ff } /* Literal.Number.Hex */
@@ -88,8 +88,10 @@
 
 code.language-plaintext{
     background:#e9ecef; 
-    color:#272822;
+    color:#f92672;
     padding:.125rem .25rem;
+    margin-left:.125rem;
+    margin-right:.125rem;
     border-radius: .25rem;
     display:inline-block;
 }
