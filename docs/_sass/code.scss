@@ -106,12 +106,14 @@ $w: #c0c000;
         background:#272822;
     }
     .rouge-gutter{
+        border-radius: .5rem 0 0 .5rem;
         text-align:right;
         .lineno{
-            opacity:0.75;
+            opacity:0.2;
         }
     }
     .rouge-code{
+        border-radius: 0 .5rem .5rem 0;
         width:100%;
     }
 }
