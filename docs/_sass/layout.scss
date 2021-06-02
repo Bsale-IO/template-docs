@@ -151,10 +151,18 @@ h1,h2,h3,h4,h5,h6,
     .lv1{
         font-size:16px;
         padding:.25rem;
+        &.active{
+            color: $secondary-color
+        }
     }
     .lv2{
         padding:.25rem;
         padding-left: 1.4rem;
+        &.active{
+            background:$gray-primary;
+            border-radius:.25rem;
+            color: $dark-background;
+        }
     }
     .lv1, .lv2{ 
         text-transform: capitalize;
@@ -172,11 +180,6 @@ h1,h2,h3,h4,h5,h6,
                 transform: rotate(-90deg)
             }
         }
-    }
-    .lv2.active{
-        background:$gray-primary;
-        border-radius:.25rem;
-        color: $dark-gray;
     }
 }
 
