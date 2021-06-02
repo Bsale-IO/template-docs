@@ -171,10 +171,6 @@ h1,h2,h3,h4,h5,h6,
         &:hover{
             color:inherit
         }
-        &.active{
-            font-weight: 600;
-            
-        }
         &:not(.collapsed){
             .fas{
                 transform: rotate(-90deg)
